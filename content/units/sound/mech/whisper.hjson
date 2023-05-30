@@ -1,0 +1,170 @@
+speed: 0.27
+rotateSpeed: 1.25
+hitSize: 48
+health: 46000
+armor: 20
+buildSpeed: 5.6
+mechFrontSway: 1.2
+mechSideSway: 0.5
+stepShake: 3
+mechStepParticles: true
+mechLegColor: 262626
+singleTarget: true
+targetAir: true
+targetGround: true
+outlineColor: 262626
+outlineRadius: 4
+
+weapons: [
+{
+name: whisper-railgun
+mirror: false
+top: true
+y: -3
+x: 0
+shootY: 4
+rotate: false
+cooldownTime: 150
+reload: 170
+recoil: 6
+shake: 2
+shadow: 40
+ejectEffect: none
+shootSound: railgun
+heatColor: 8a3dba
+bullet: {
+type: RailBulletType
+pierceArmor: true
+shootEffect: {
+type: MultiEffect
+effects: [
+{
+type: WaveEffect
+sides: 0
+lifetime: 30
+sizeFrom: 20
+sizeTo: 0
+strokeFrom: 4
+strokeTo: 0
+colorFrom: af6cd9
+colorTo: 8a3dba
+}
+{
+type: ParticleEffect
+region: sundered-sound-rail-2
+particles: 1
+length: 0
+lifetime: 30
+sizeFrom: 20
+colorFrom: af6cd9
+colorTo: 8a3dba
+}
+]
+}
+pointEffect: {
+type: ParticleEffect
+particles: 1
+length: 0
+lifetime: 30
+sizeFrom: 20
+region: sundered-sound-rail
+colorFrom: af6cd9
+colorTo: 8a3dba
+}
+pierceEffect: {
+type: ParticleEffect
+particles: 1
+length: 0
+lifetime: 30
+sizeFrom: 20
+region: sundered-sound-pierce
+colorFrom: af6cd9
+colorTo: 8a3dba
+}
+hitEffect: {
+type: ExplosionEffect
+waveRad: 20
+smokeRad: 30
+smokeSize: 8
+waveLife: 15
+waveColor: af6cd9
+sparks: 0
+}
+smokeEffect: shootBig2
+length: 450
+damage: 500
+pierceDamageFactor: 1.5
+buildingDamageMultiplier: 1.2
+}
+}
+{
+name: gun
+mirror: true
+top: false
+y: -0.25
+x: 27.5
+shootY: 17
+reload: 6
+recoil: 4
+ejectEffect: none
+shootSound: shotgun
+bullet: {
+type: ShrapnelBulletType
+damage: 120
+length: 200
+serrations: 4
+width: 20
+knockback: 2
+lifetime: 24
+fromColor: ffffff
+toColor: 8a3dba
+}
+}
+{
+name: sound-gunner
+mirror: true
+top: true
+rotate: true
+rotateSpeed: 2.1
+y: -7
+x: 20
+shootY: 3
+reload: 30
+recoil: 1.75
+ejectEffect: casing1
+shootSound: missile
+shoot: {
+type: ShootAlternate
+shots: 2
+spread: 4
+shotDelay: 20
+}
+bullet: {
+type: MissileBulletType
+sprite: circle-bullet
+speed: 5
+width: 8
+height: 8
+damage: 22
+lifetime: 90
+splashDamage: 90
+splashDamageRadius: 40
+keepVelocity: false
+shootEffect: none
+smokeEffect: none
+despawnHit: true
+hitSound: explosion
+homingRange: 120
+homingPower: 0.7
+frontColor: ffffff
+backColor: af6cd9
+trailColor: af6cd9
+pierce: true
+collidesAir: true
+collidesTiles: false
+collidesGround: true
+}
+}
+]
+
+research: shriek

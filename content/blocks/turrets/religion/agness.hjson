@@ -1,0 +1,70 @@
+type: ItemTurret
+category: turret
+size: 2
+health: 900
+range: 160
+targetGround: true
+targetAir: true
+rotateSpeed: 1.3
+reload: 15
+shootSound: laser
+outlineRadius: 4
+outlineColor: 303030
+requirements: [
+silicon/20
+lead/20
+]
+
+shoot: {
+type: ShootSpread
+spread: 2
+shots: 4
+}
+
+drawer: {
+type: DrawTurret
+basePrefix: religion-
+parts: [
+{
+type: RegionPart
+suffix: -blade
+mirror: true
+under: true
+progress: warmup
+moveY: 1
+moveX: 1
+}
+{
+type: RegionPart
+suffix: -wing-front
+mirror: true
+under: true
+progress: warmup
+moveY: -2
+moveX: 2
+}
+{
+type: RegionPart
+suffix: -wing-back
+mirror: true
+under: true
+progress: warmup
+moveY: -2
+moveX: 2
+}
+]
+}
+
+ammoTypes: {
+titanium: {
+type: ShrapnelBulletType
+lifetime: 20
+damage: 50
+width: 10
+length: 160
+serrations: 0
+knockback: 0.5
+}
+}
+
+research: grail

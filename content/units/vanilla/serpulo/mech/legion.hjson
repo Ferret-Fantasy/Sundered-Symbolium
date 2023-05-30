@@ -1,0 +1,57 @@
+speed: 0.18
+rotateSpeed: 0.65
+health: 160000
+armor: 30
+hitSize: 58
+mechStepParticles: true
+stepShake: 6
+outlineRadius: 4
+singleTarget: true
+targetGround: true
+targetGround: true
+
+weapons: [
+{
+name: legion-annihilater
+mirror: true
+top: false
+x: 45
+shootY: 26
+reload: 15
+recoil: 8
+shootSound: bang
+bullet: {
+type: BasicBulletType
+speed: 30
+lifetime: 12
+damage: 220
+pierce: true
+pierceCap: 8
+shootEffect: shootBig
+hitEffect: blastExplosion
+collidesGround: true
+collidesAir: true
+width: 20
+height: 44
+reflectable: true
+hittable: false
+absorbable: true
+fragRandomSpread: 0
+fragSpread: 22.5
+fragBullets: 4
+fragBullet: {
+type: LaserBulletType
+damage: 40
+width: 20
+length: 48
+hitSize: 10
+colors: [ffa666, ffa666, ffffff]
+pierce: true
+hitEffect: hitLaserBlast
+despawnEffect: none
+}
+}
+}
+]
+
+research: royal

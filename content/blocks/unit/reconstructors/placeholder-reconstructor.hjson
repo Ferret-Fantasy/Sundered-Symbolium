@@ -1,0 +1,39 @@
+type: Reconstructor
+category: units
+size: 14
+health: 20000
+requirements: [
+silicon/3000
+titanium/3000
+thorium/3000
+plastanium/3000
+surge-alloy/2500
+phase-fabric/2000
+gordium/1500
+]
+
+constructTime: 2400
+liquidCapacity: 300
+
+upgrades: [
+[
+whisper, silence
+]
+[
+royal, legion
+]
+]
+
+consumes: {
+power: 31
+liquid: cryofluid/4.25
+items: {
+items: [
+surge-alloy/3000
+phase-fabric/2750
+warmstadtium/2250
+gordium/1500
+bismuth/1500
+]
+}
+}

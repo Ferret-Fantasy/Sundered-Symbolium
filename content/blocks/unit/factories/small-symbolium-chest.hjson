@@ -1,0 +1,34 @@
+type: UnitFactory
+category: units
+health: 500
+size: 3
+requirements: [
+titanium/60
+silicon/80
+]
+
+consumes: {
+power: 5
+}
+
+plans: [
+{
+unit: note
+requirements: [
+silicon/20
+lead/15
+warmstadtium/10
+]
+time: 600
+}
+{
+unit: adept
+requirements: [
+silicon/30
+titanium/30
+]
+time: 750
+}
+]
+
+research: ground-factory 

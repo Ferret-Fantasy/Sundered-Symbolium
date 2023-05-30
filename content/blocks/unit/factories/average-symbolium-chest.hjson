@@ -1,0 +1,45 @@
+type: UnitFactory
+category: units
+health: 900
+size: 3
+requirements: [
+titanium/120
+silicon/100
+graphite/120
+]
+
+consumes: {
+power: 8
+}
+
+plans: [
+{
+unit: voice
+requirements: [
+silicon/50
+graphite/30
+warmstadtium/40
+]
+time: 600
+}
+{
+unit: clear
+requirements: [
+silicon/60
+graphite/30
+titanium/60
+]
+time: 600
+}
+{
+unit: tractate
+requirements: [
+silicon/60
+metaglass/30
+graphite/40
+]
+time: 600
+}
+]
+
+research: small-symbolium-chest

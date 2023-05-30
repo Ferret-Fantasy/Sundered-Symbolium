@@ -1,0 +1,62 @@
+speed: 0.27
+rotateSpeed: 0.8
+health: 56000
+armor: 24
+hitSize: 48
+mechFrontSway: 0.8
+mechSideSway: 0.5
+mechStepParticles: true
+stepShake: 3
+outlineRadius: 4
+targetGround: true
+targetAir: true
+singleTarget: true
+
+weapons: [
+{
+name: royal-cannon
+mirror: true
+top: false
+y: -2.75
+x: 28.5
+shootY: 22
+reload: 15
+recoil: 6
+shake: 2
+shootSound: bang
+ejectEffect: casing4
+bullet: {
+type: BasicBulletType
+speed: 20
+lifetime: 24
+damage: 110
+pierce: true
+pierceCap: 8
+shootEffect: shootBig
+hitEffect: blastExplosion
+collidesGround: true
+collidesAir: true
+width: 20
+height: 44
+reflectable: true
+hittable: false
+absorbable: true
+fragRandomSpread: 0
+fragSpread: 22.5
+fragBullets: 4
+fragBullet: {
+type: LaserBulletType
+damage: 40
+width: 20
+length: 48
+hitSize: 10
+colors: [ffa666, ffa666, ffffff]
+pierce: true
+hitEffect: hitLaserBlast
+despawnEffect: none
+}
+}
+}
+]
+
+research: reign

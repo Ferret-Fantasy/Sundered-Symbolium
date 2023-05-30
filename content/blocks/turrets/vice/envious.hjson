@@ -1,0 +1,61 @@
+category: turret
+range: 240
+health: 14000
+range: 480
+size: 5
+reload: 15
+targetAir: true
+targetGround: true
+outlineColor: 303030
+outlineRadius: 4
+cooldownTime: 6
+recoil: 0
+shootY: 14
+shootSound: bang
+requirements: [
+thorium/600
+silicon/600
+plastanium/400
+gordium/200
+]
+
+drawer: {
+type: DrawTurret
+parts: [
+{
+type: RegionPart
+suffix: "-barrel"
+mirror: false
+moveY: -4
+progress: recoil
+}
+{
+type: RegionPart
+suffix: "-side"
+mirror: true
+moveX: -4.25
+progress: warmup
+}
+]
+}
+
+ammoTypes: {
+thorium: {
+type: BasicBulletType
+damage: 240
+speed: 15
+lifetime: 32
+pierce: true
+pierceCap: 8
+width: 18
+height: 22
+status: corroded
+statusDuration: 140
+shootEffect: shootSmall
+smokeEffect: shootSmallSmoke
+frontColor: faa2c7
+backColor: cc8fc0
+}
+}
+
+research: traitor

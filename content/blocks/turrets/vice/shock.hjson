@@ -1,0 +1,62 @@
+category: turret
+health: 500
+range: 800
+recoil: 0
+reload: 75
+size: 2
+targetGround: true
+targetAir: true
+outlineRadius: 4
+outlineColor: 303030
+shootSound: laser
+requirements: [
+titanium/70
+silicon/50
+plastanium/70
+]
+
+drawer: {
+type: DrawTurret
+parts: [
+{
+type: RegionPart
+suffix: "-barrel"
+moveY: -2
+progress: recoil
+mirror: false
+}
+{
+type: RegionPart
+suffix: "-back"
+moveX: -1.5
+moveY: -1
+mirror: true
+progress: warmup
+}
+{
+type: RegionPart
+suffix: "-front"
+moveY: 4
+moveRot: -45
+mirror: true
+progress: warmup 
+}
+]
+}
+
+ammoTypes: {
+copper: {
+type: BasicBulletType
+speed: 20
+lifetime: 40
+damage: 100
+width: 30
+height: 30
+pierce: true
+pierceBuilding: true
+collidesGround: true
+collidesAir: true
+}
+}
+
+research: lancer

@@ -1,0 +1,69 @@
+type: PowerTurret
+category: turret
+size: 1
+health: 100
+rotateSpeed: 1.4
+range: 80
+targetGround: true
+targetAir: true
+reload: 9
+outlineColor: 303030
+outlineRadius: 4
+shootSound: spark
+recoil: 0
+shootCone: 270
+requirements: [
+graphite/6
+silicon/8
+]
+
+drawer: {
+type: DrawTurret
+basePrefix: religion-
+parts: [
+{
+type: RegionPart
+suffix: -barrel
+moveX: 1
+moveY: 1
+progress: warmup
+mirror: true
+}
+{
+type: RegionPart
+suffix: -blade
+mirror: true
+under: true
+progress: warmup
+moveY: -1
+moveX: 1
+}
+{
+type: RegionPart
+suffix: -knife
+mirror: false
+under: true
+progress: warmup
+moveY: -2
+}
+]
+}
+
+shootType: {
+type: LightningBulletType
+damage: 10
+width: 4
+lightningColor: f5802c
+lightningLength: 40
+pierce: true
+collidesAir: true
+collidesGround: true
+shootEffect: none
+hitEffect: none
+}
+
+consumes: {
+power: 3
+}
+
+research: arc

@@ -1,0 +1,36 @@
+type: GenericCrafter
+category: crafting
+craftEffect: smeltsmoke
+craftTime: 70
+size: 3
+requirements: [
+lead/60
+silicon/40
+titanium/40
+]
+
+drawer: {
+type: DrawMulti
+drawers: [DrawDefault, DrawFlame]
+}
+
+hasItems: true
+itemCapacity: 30
+hasPower: true
+hasLiquids: false
+consumes: {
+power: 1.7
+items: {
+items: [
+lead/3
+titanium/4
+silicon/3
+]
+}
+}
+
+outputItem: warmstadtium/6
+ambientSound: smelter
+ambientSoundVolume: 0.5
+
+research: silicon-smelter

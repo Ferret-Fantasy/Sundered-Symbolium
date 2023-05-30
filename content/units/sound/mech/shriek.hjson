@@ -1,0 +1,98 @@
+speed: 0.37
+hitSize: 27
+rotateSpeed: 1.57
+buildSpeed: 4.5
+health: 23400
+armor: 12
+mechFrontSway: 1.0
+mechSideSway: 0.4
+mechStepParticles: true
+singleTarget: true
+mechLegColor: 262626
+outlineColor: 262626
+outlineRadius: 4
+targetGround: true
+targetAir: true
+drawShields: true
+healColor: af6cd9
+
+weapons: [
+{
+name: shriek-weapon
+mirror: false
+y: 0
+x: 0
+shootY: 8.5
+recoil: 18
+reload: 360
+shootSound: artillery
+bullet: {
+type: ArtilleryBulletType
+speed: 6
+width: 12
+height: 12
+sprite: shell
+lifetime: 72
+frontColor: 8a3dba
+backColor: af6cd9
+shootEffect: none
+smokeEffect: none
+despawnEffect: none
+splashDamage: 240
+splashDamageRadius: 250
+collidesGround: true
+collidesAir: true
+hitSound: release
+hitEffect: {
+type: WaveEffect
+sides: 0
+sizeFrom: 0
+sizeTo: 250
+strokeFrom: 0
+strokeTo: 8
+lifetime: 14
+colorFrom: af6cd9
+colorTo: 8a3dba
+}
+}
+}
+{
+name: shriek-cannon
+mirror: true
+top: false
+y: -0.5
+x: 21
+shootY: 11
+reload: 6
+recoil: 2
+shake: 2
+shootSound: shotgun
+bullet: {
+type: ShrapnelBulletType
+damage: 152
+length: 196
+width: 11
+serrations: 0
+knockback: -0.5
+smokeEffect: none
+despawnEffect: none
+shootEffect: {
+type: ParticleEffect 
+line: true
+particles: 12
+lifetime: 8
+length: 65
+cone: -35
+lenFrom: 12
+lenTo: 8
+lightColor: af6cd9
+colorFrom: af6cd9
+colorTo: 8a3dba
+}
+fromColor: ffffff
+toColor: af6cd9
+}
+}
+]
+
+research: scream

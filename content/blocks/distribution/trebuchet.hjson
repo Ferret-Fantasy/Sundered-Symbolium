@@ -1,0 +1,21 @@
+type: MassDriver
+requirements: [
+titanium/250
+silicon/250
+lead/200
+thorium/200
+]
+
+category: distribution
+size: 3
+health: 1500
+itemCapacity: 360
+reload: 180
+bulletSpeed: 8
+bulletLifetime: 200
+range: 1600
+consumes: {
+power: 6
+}
+
+research: phase-conveyor

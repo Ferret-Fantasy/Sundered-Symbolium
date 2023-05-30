@@ -1,0 +1,46 @@
+speed: 0.49
+riseSpeed: 4
+rotateSpeed: 2.45
+buildSpeed: 1.5
+hitSize: 11
+canBoost: true
+lowAltitude: true
+engineSize: 1.5
+engineOffset: 3
+health: 500
+armor: 3
+targetAir: true
+targetGround: true
+singleTarget: true
+outlineColor: 262626
+mechLegColor: 262626
+outlineRadius: 4
+
+weapons: [
+{
+name: voice-bolter
+mirror: true
+top: false
+y: 1
+x: 6
+reload: 12
+recoil: 1.5
+shootY: 3.5
+shootSound: release
+bullet: {
+type: BasicBulletType
+damage: 16
+sprite: sundered-wave-bullet
+speed: 6
+width: 9
+lifetime: 40
+height: 6
+shootEffect: shootSmall
+smokeEffect: shootSmallSmoke
+backColor: af6cd9
+frontColor: 8a3dba
+}
+}
+]
+
+research: note

@@ -1,0 +1,77 @@
+category: turret
+requirements: [
+titanium/200
+silicon/200
+plastanium/200
+]
+heatColor: 3ebd95
+size: 4
+health: 6000
+rotateSpeed: 1.6
+range: 200
+reload: 160
+recoil: 0
+cooldownTime: 90
+shootEffect: shootBig
+shootCone: 30
+shootSound: artillery
+maxAmmo: 56
+ammoPerShot: 8
+ammoUseEffect: none
+targetAir: true
+targetGround: true
+outlineColor: 303030
+outlineRadius: 4
+shootY: -3
+shoot: {
+type: ShootSpread
+shots: 8
+spread: 0.45
+shotDelay: 8
+}
+
+drawer: {
+type: DrawTurret
+parts: [
+{
+type: RegionPart
+suffix: -front
+mirror: true
+moveY: -3
+moveX: 3
+progress: warmup 
+}
+]
+}
+
+ammoTypes: {
+gordium: {
+type: MissileBulletType
+damage: 40
+width: 11
+height: 12
+sprite: circle-bullet
+frontColor: ffffff
+backColor: 3ebd95
+speed: 7
+status: burning
+statusDuration: 120
+splashDamage: 100
+splashDamageRadius: 32
+keepVelocity: false
+lifetime: 75
+shrinkY: 0
+shrinkX: 0
+homingPower: 0.5
+homingRange: 64
+despawnHit: true
+hitSound: explosion
+hitEffect: none
+makeFire: true
+incendSpread: 1.2
+incendChance: 0.6
+incendAmount: 0.8
+}
+}
+
+research: lie

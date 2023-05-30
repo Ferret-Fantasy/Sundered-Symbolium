@@ -1,0 +1,25 @@
+plans: [
+{
+unit: flare
+requirements: [
+silicon/15
+]
+time: 900
+}
+{
+unit: mono
+requirements: [
+lead/15
+silicon/30
+]
+time: 1200
+}
+{
+unit: whistling
+requirements: [
+silicon/25
+warmstadtium/15
+]
+time: 300
+}
+]

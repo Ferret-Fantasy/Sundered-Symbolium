@@ -1,0 +1,79 @@
+speed: 0.42
+rotateSpeed: 1.6
+buildSpeed: 4.2
+canBoost: true
+riseSpeed: 0.12
+engineSize: 2
+engineOffset: 10
+lowAltitude: true
+hitSize: 22
+health: 8700
+armor: 8
+targetGround: true
+targetAir: true
+singleTarget: true
+mechFrontSway: 0.6
+mechSideSway: 0.4
+outlineColor: 262626
+mechLegColor: 262626
+outlineRadius: 4
+
+weapons: [
+{
+name: scream-gun
+mirror: true
+top: false
+y: -0.5
+x: 14.5
+shootY: 8
+reload: 30
+recoil: 1.5
+shootSound: shoot
+bullet: {
+type: EmpBulletType
+width: 12
+height: 12
+damage: 60
+speed: 9
+lifetime: 60
+scaleVelocity: true
+lightOpacity: 0.7
+unitDamageScl: 3
+healPercent: 20
+timeIncrease: 3
+timeDuration: 1200
+powerDamageScl: 1.5
+hitColor: 98ffa9
+lightColor: 98ffa9
+backColor: 98ffa9
+trailColor: 98ffa9
+frontColor: ffffff
+lightRadius: 70
+clipSize: 250
+shootEffect: hitEmpSpark
+smokeEffect: shootBigSmoke2
+sprite: circle-bullet
+trailLength: 20
+trailWidth: 6
+splashDamage: 70
+splashDamageRadius: 100
+hitShake: 4
+trailRotation: true
+status: electrified
+hitSound: plasmaboom
+hitEffect: {
+type: WaveEffect
+sides: 0
+lifetime: 40
+sizeFrom: 100
+sizeTo: 100
+strokeTo: 0
+colorFrom: 98ffa9
+colorTo: 98ffa9
+}
+trailEffect: none
+}
+}
+]
+
+research: song

@@ -1,0 +1,66 @@
+category: turret
+size: 3
+health: 700
+range: 440
+targetAir: true
+targetGround: true
+outlineColor: 303030
+outlineRadius: 4
+recoil: 2.5
+rotateSpeed: 2.5
+recoilTime: 150
+reload: 120
+shootSound: railgun
+consumes: {
+power: 4.5
+}
+
+requirements: [
+silicon/250
+titanium/200
+thorium/100
+]
+
+shootType: {
+type: PointBulletType
+damage: 700
+speed: 440
+lifetime: 20
+pierce: true
+shootEffect: instShoot
+hitEffect: {
+type: WaveEffect
+sides: 0
+sizeFrom: 0
+sizeTo: 96
+strokeFrom: 6
+strokeTo: 0
+lifetime: 20
+colorFrom: ffffff
+colorTo: 3ebd95
+}
+smokeEffect: smokeCloud
+trailEffect: instTrail
+despawnEffect: instBomb
+trailSpacing: 10
+hitSound: release
+fragBullets: 1
+fragRandomSpread: 360
+fragBullet: {
+type: BasicBulletType
+pierce: true
+hitSize: 4
+lifetime: 20
+height: 0.001
+width: 0.001
+speed: 0
+damage: 0
+collides: false
+splashDamage: 220
+splashDamageRadius: 96
+frontColor: ffffff
+backColor: 3ebd95
+}
+}
+
+research: lancer

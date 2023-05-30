@@ -1,0 +1,35 @@
+isEnemy: false
+speed: 0
+health: 9000
+rotateSpeed: 3.2
+buildSpeed: 2.4
+mineSpeed: 1.4
+mineTier: 4
+armor: 20
+hitSize: 40
+buildRange: 8000
+mineRange: 8000
+targetAir: true
+targetGround: true
+killable: true
+targetable: false
+drawCell: false
+drawEngine: false
+drawOutline: false
+healColor: af6cd9
+
+abilities: [
+{
+type: RepairFieldAbility
+range: 8000
+amount: 200
+reload: 480
+}
+{
+type: ForceFieldAbility
+max: 15000
+cooldown: 480
+regen: 500
+radius: 240
+}
+]

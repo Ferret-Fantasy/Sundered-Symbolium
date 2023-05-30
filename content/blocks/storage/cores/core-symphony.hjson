@@ -1,0 +1,19 @@
+type: CoreBlock
+category: effect
+health: 456000
+size: 9
+armor: 20
+itemCapacity: 45000
+unitType: symphony
+unitCapModifier: 56
+
+requirements: [
+lead/22000
+metaglass/18000
+silicon/18000
+thorium/15000
+warmstadtium/12000
+gordium/7000
+]
+
+research: core-nucleus

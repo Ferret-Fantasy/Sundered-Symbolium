@@ -1,0 +1,49 @@
+category: turret
+size: 1
+health: 500
+range: 72
+targetGround: true
+targetAir: false
+reload: 3
+recoil: 0
+shootCone: 70
+shootSound: flame
+requirements: [
+graphite/10
+silicon/10
+]
+
+ammoTypes: {
+coal: {
+type: BulletType
+speed: 4
+damage: 56
+lifetime: 18
+hitSize: 7
+pierce: true
+status: burning
+statusDuration: 120
+collidesAir: false
+hittable: false
+shootEffect: shootSmallFlame
+hitEffect: hitFlameSmall
+despawnEffect: none
+}
+pyratite: {
+type: BulletType
+speed: 4
+damage: 88
+lifetime: 18
+hitSize: 7
+pierce: true
+status: burning
+statusDuration: 120
+collidesAir: false
+hittable: false
+shootEffect: shootPyraFlame
+hitEffect: hitFlameSmall
+despawnEffect: none
+}
+}
+
+research: scorch

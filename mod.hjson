@@ -1,0 +1,7 @@
+displayName: "Sundered-Symbolium"
+name: "sundered"
+description: "Тестовая версия большого мода"
+author: "Ferret-Fantasy"
+version: "1.0"
+minGameVersion: "136"
+hidden: "false"

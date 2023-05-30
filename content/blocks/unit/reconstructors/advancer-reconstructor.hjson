@@ -1,0 +1,44 @@
+type: Reconstructor
+category: units
+size: 11
+health: 10000
+requirements: [
+silicon/1000
+thorium/1000
+plastanium/800
+surge-alloy/800
+gordium/400
+]
+
+consumes: {
+power: 27
+liquid: cryofluid/3.5
+items: {
+items: [
+plastanium/2000
+surge-alloy/1500
+phase-fabric/1250
+silicon/1000
+warmstadtium/700
+]
+}
+}
+
+upgrades: [
+[shriek, whisper]
+[reign, royal]
+]
+
+constructTime: 21000
+liquidCapacity: 190
+
+research: {
+parent: tetrative-reconstructor
+requirements: [
+plastanium/200000
+surge-alloy/180000
+phase-fabric/170000
+silicon/150000
+warmstadtium/125000
+]
+}

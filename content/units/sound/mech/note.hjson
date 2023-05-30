@@ -1,0 +1,72 @@
+speed: 0.6
+canBoost: true
+riseSpeed: 6
+engineSize: 0.8
+engineOffset: 1
+lowAltitude: true
+hitSize: 8
+rotateSpeed: 2.75
+buildSpeed: 1.30
+health: 100
+targetAir: false
+targetGround: true
+outlineColor: 262626
+mechLegColor: 262626
+outlineRadius: 4
+singleTarget: true
+healColor: af6cd9
+
+weapons: [
+{
+name: note-weapon
+mirror: false
+top: false
+y: 0
+x: 0
+shootY: 2
+reload: 6
+recoil: 0
+shootSound: release
+bullet: {
+type: BasicBulletType
+damage: 12
+sprite: sundered-wave-bullet
+speed: 6
+width: 9
+lifetime: 40
+height: 6
+shootEffect: {
+type: ParticleEffect
+region: sundered-spikething
+particles: 1
+length: 0
+sizeFrom: 8
+sizeTo: 0
+lifetime: 12
+colorFrom: 8a3dba
+colorTo: af6cd9
+}
+smokeEffect: shootSmallSmoke
+backColor: af6cd9
+frontColor: 8a3dba
+}
+}
+]
+
+abilities: [
+{
+type: RepairFieldAbility
+amount: 6
+reload: 18
+range: 32
+}
+]
+
+research: {
+parent: nova
+requirements: [
+titanium/700
+silicon/700
+warmstadtium/700
+]
+}

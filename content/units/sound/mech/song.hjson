@@ -1,0 +1,95 @@
+speed: 0.45
+rotateSpeed: 1.8
+hitSize: 14
+buildSpeed: 3.8
+canBoost: true
+riseSpeed: 0.07
+engineSize: 1.1
+lowAltitude: true
+health: 800
+armor: 7
+mechFrontSway: 0.5
+singleTarget: true
+mechLegColor: 262626
+outlineColor: 262626
+outlineRadius: 4
+targetGround: true
+targetAir: false
+heslColor: af6cd9
+
+
+weapons: [
+{
+name: song-weapon
+y: 0
+x: 0
+shootY: 5
+reload: 90
+recoil: 1.5
+shootSound: sap
+bullet: {
+type: SapBulletType
+damage: 24
+sapStrength: 0.7
+length: 100
+width: 0.4
+speed: 0
+shootEffect: shootSmall
+despawnEffect: none
+lifetime: 30
+pierce: true
+collides: false
+hittable: false
+hitSize: 0
+hitEffect: hitLiquid
+status: sapped
+statusDuration: 180
+impact: true
+}
+}
+{
+name: song-artillery
+mirror: true
+top: false
+y: 2
+x: 8
+shootY: 5.5
+recoil: 2
+reload: 75
+shake: 0.5
+ejectEffect: casing3
+shoot: {
+type: ShootPattern
+shots: 4
+}
+inaccuracy: 4
+shootSound: artillery
+bullet: {
+type: ArtilleryBulletType
+speed: 6
+width: 8
+height: 8
+sprite: circle-bullet
+splashDamage: 20
+splashDamageRadius: 16
+lifetime: 80
+shootEffect: none
+smokeEffect: none
+despawnEffect: flakExplosion
+hitEffect: flakExplosion
+collidesGround: true
+collidesTiles: true
+}
+}
+]
+
+abilities: [
+{
+type: RepairFieldAbility
+amount: 40
+reload: 40
+range: 32
+}
+]
+
+research: voice

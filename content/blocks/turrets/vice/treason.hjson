@@ -1,0 +1,57 @@
+category: turret
+size: 6
+health: 18000
+targetAir: true
+targetGround: true
+outlineColor: 303030
+heatColor: 3ebd95
+
+requirements: [
+thorium/1600
+silicon/2000
+plastanium/300
+surge-alloy/300
+]
+
+rotateSpeed: 1.4
+cooldownTime: 320
+range: 300
+reload: 300
+recoil: 5
+consumes: {
+power: 23
+}
+firingMoveFract: 0.8
+shootSound: laserbig
+shootDuration: 420
+loopSound: continuous-laser-a
+loopSoundVolume: 1.15
+shootY: 2
+shootCone: 360
+shake: 2.45
+shootType: {
+type: ContinuousLaserBulletType
+damage: 100
+length: 300
+hitEffect: hitMeltdown
+hitColor: meltdownHit
+status: melting
+statusDuration: 420
+drawSize: 300
+shootEffect: shootBigSmoke2
+width: 6
+colors: [1e7565, 129680, 3ebd95, ffffff]
+incendChance: 0.2
+incendSpread: 1
+incendAmount: 0.6
+}
+
+research: {
+parent: meltdown
+requirements: [
+thorium/124000
+silicon/80000
+plastanium/70000
+surge-alloy/40000
+]
+}

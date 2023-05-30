@@ -1,0 +1,147 @@
+speed: 0.22
+rotateSpeed: 0.80
+hitSize: 54
+health: 138000
+armor: 20
+buildSpeed: 7.40
+mechFrontSway: 1.6
+mechSideSway: 1
+mechStride: 18
+stepShake: 4
+mechStepParticles: true
+mechLegColor: 262626
+singleTarget: true
+outlineColor: 262626
+outlineRadius: 4
+targetAir: true
+targetGround: true
+healColor: af6cd9
+
+weapons: [
+{
+name: bluf
+top: false
+mirror: true
+y: 0
+x: 46
+layerOffset: -0.0001
+shootY: 26
+recoil: 6
+reload: 12
+shootSound: shoot
+shoot: {
+type: ShootPattern
+shots: 3
+shotDelay: 0.6
+}
+bullet: {
+type: BasicBulletType
+damage: 50
+sprite: sundered-wave-bullet
+speed: 8
+width: 32
+height: 12
+lifetime: 60
+pierce: true
+pierceCap: 8
+shootEffect: shootSmall
+smokeEffect: shootSmallSmoke
+frontColor: af6cd9
+backColor: 8a3dba
+}
+}
+{
+name: silence-weapon
+mirror: false
+top: false
+y: 0
+x: 0
+shootY: 21
+shootX: 0
+reload: 300
+cooldownTime: 280
+shoot: {
+type: ShootPattern
+firstShotDelay: 42
+}
+parentizeEffects: true
+continuous: true
+recoil: 0
+chargeSound: lasercharge2
+shootSound: beam
+bullet: {
+type: ContinuousLaserBulletType
+damage: 110
+lifetime: 480
+shootEffect: shootBigSmoke2
+chargeEffect: {
+type: WaveEffect
+sides: 0
+sizeFrom: 72
+sizeTo: 0
+strokeFrom: 10
+strokeTo: 0
+lifetime: 32
+colorFrom: af6cd9
+colorTo: 8a3dba
+}
+length: 320
+drawSize: 320
+hitEffect: hitMeltdown
+despawnEffect: smokeCloud
+hitColor: meltdownHit
+colors: [662299, 8a3dba, ffffff, ffffff]
+width: 11
+status: melting
+statusDuration: 90
+incendAmount: 1
+incendChance: 1.2
+incendSpread: 1
+}
+}
+]
+
+abilities: [
+{
+type: RepairFieldAbility
+amount: 1000
+reload: 560
+range: 112
+}
+{
+type: UnitSpawnAbility
+unit: whistling
+spawnX: 25.25
+spawnY: -8.5
+spawnTime: 1200
+}
+{
+type: UnitSpawnAbility
+unit: whistling
+spawnX: -25.25
+spawnY: -8.5
+spawnTime: 1200
+}
+{
+type: UnitSpawnAbility
+unit: laugh
+spawnX: 21.25
+spawnY: -19
+spawnTime: 1800
+}
+{
+type: UnitSpawnAbility
+unit: laugh
+spawnX: -21.25
+spawnY: -19
+spawnTime: 1800
+}
+{
+type: SpawnDeathAbility
+unit: whisper
+amount: 2
+spread: 10
+}
+]
+
+research: whisper

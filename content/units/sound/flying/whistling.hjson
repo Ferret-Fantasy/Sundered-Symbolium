@@ -1,0 +1,58 @@
+speed: 3.5
+buildSpeed: 1.2
+health: 700
+armor: 5
+range: 320
+hitSize: 8
+lowAltitude: true
+flying: true
+drag: 0.01
+accel: 0.06
+engineSize: 0.9
+targetGround: true
+targetAir: true
+singleTarget: true
+outlineColor: 262626
+outlineRadius: 4
+drawCell: false
+
+weapons: [
+{
+name: whistling-weapon
+mirror: false
+top: false
+x: 0
+y: 0
+shootY: 0
+shootOnDeath: true
+reload: 28
+shootCone: 180
+shootSound: explosion
+ejectEffect: none
+autoTarget: true
+bullet: {
+type: BulletType
+damage: 0
+hitEffect: pulverize
+speed: 0
+lifetime: 8
+splashDamageRadius: 64
+splashDamage: 600
+rangeOverride: 60
+instantDisappear: true
+killShooter: true
+hittable: false
+collidesAir: true
+collidesTiles: false
+collidesGround: true
+}
+}
+]
+
+research: {
+parent: mono
+requirements: [
+silicon/700
+warmstadtium/500
+]
+}

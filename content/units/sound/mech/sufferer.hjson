@@ -1,0 +1,107 @@
+speed: 0.20
+rotateSpeed: 0.90
+buildSpeed: 10
+hitSize: 100
+health: 2460000
+armor: 72
+range: 450
+maxRange: 450
+lightRadius: 450
+canDrown: false
+outlineColor: 262626
+outlineRadius: 5
+mechFrontSway: 1.2
+mechSideSway: 0.8
+mechStepParticles: true
+mechStride: 32
+stepShake: 6
+mechLegColor: 262626
+singleTarget: true
+targetAir: true
+targetGround: true
+
+weapons: [
+{
+name: sufferer-weapon
+mirror: false
+top: false
+y: 0
+x: 0
+shootY: 34
+recoil: 0
+shake: 5
+reload: 750
+cooldownTime: 1080
+parentizeEffects: true
+continuous: true
+chargeSound: lasercharge2
+shootSound: beam
+shoot: {
+type: ShootPattern
+firstShotDelay: 90
+}
+bullet: {
+type: ContinuousLaserBulletType
+damage: 500
+length: 450
+drawSize: 450
+lifetime: 600
+status: self-destruction
+statusDuration: 600
+chargeEffect: {
+type: WaveEffect
+sides: 0
+sizeFrom: 0
+sizeTo: 70
+strokeFrom: 20
+strokeTo: 0
+lifetime: 100
+}
+shootEffect: shootBigSmoke2
+despawnEffect: smokeCloud
+hitEffect: hitMeltdown
+hitColor: meltdownHit
+colors: [8a3dba, af6cd9, ffffff, ffffff]
+width: 17
+incendSpread: 0
+incendChance: 0
+incendAmount: 0
+}
+}
+{
+name: sufferer-destructor
+top: false
+mirror: true
+layerOffset: -0.0001
+y: -5
+x: 84.75
+shootY: 45
+recoil: 8
+reload: 24
+shootSound: bang
+bullet: {
+type: BasicBulletType
+layer: 99
+damage: 2500
+splashDamage: 2500
+splashDamageRadius: 80
+sprite: sundered-crying
+spin: 10
+speed: 8
+width: 32
+height: 32
+lifetime: 56.25
+reflectable: false
+absorbable: true
+pierce: true
+pierceCap: 8
+pierceBuilding: true
+shootEffect: shootBigColor 
+smokeEffect: shootSmallSmoke
+collidesGround: true
+collidesAir: true
+frontColor: af6cd9
+backColor: 666363
+}
+}
+]

@@ -1,0 +1,99 @@
+category: turret
+size: 9
+health: 27000
+requirements: [
+gordium/5000
+plastanium/4000
+silicon/7000
+thorium/5000
+phase-fabric/4500
+surge-alloy/4500
+]
+
+coolantMultiplier: 1.2
+outlineColor: 303030
+heatColor: ffffff
+unitSort: strongest
+targetAir: true
+targetGround: true
+reload: 900
+recoil: 9
+recoilTime: 500
+rotateSpeed: 0.56
+range: 720
+cooldownTime: 900
+shootSound: powerfulblast
+shake: 7
+maxAmmo: 100
+ammoPerShot: 20
+ammoTypes: {
+titanium: {
+type: RailBulletType
+pierceArmor: true
+damage: 12500
+shootEffect: railShoot
+smokeEffect: shootBig2
+pointEffect: railTrail
+pierceDamageFactor: 1
+buildingDamageMultiplier: 1
+hitShake: 2
+length: 720
+ammoMultiplier: 2
+}
+surge-alloy: {
+type: RailBulletType
+pierceArmor: true
+damage: 50000
+shootEffect: railShoot
+smokeEffect: shootBig2
+pointEffect: railTrail
+hitShake: 4
+length: 720
+pierceDamageFactor: 1.7
+buildingDamageMultiplier: 1.15
+status: shocked
+statusDuration: 180
+ammoMultiplier: 2
+}
+gordium: {
+type: RailBulletType
+pierceArmor: true
+damage: 150000
+shootEffect: railShoot
+smokeEffect: shootBig2
+pointEffect: railTrail
+hitEffect: railHit
+hitShake: 4
+length: 720
+pierceDamageFactor: 2.2
+buildingDamageMultiplier: 1.5
+status: melting
+statusDuration: 180
+ammoMultiplier: 2
+}
+bismuth: {
+type: RailBulletType
+pierceArmor: true
+damage: 1000000
+shootEffect: railShoot
+smokeEffect: shootBig2
+pointEffect: railTrail
+hitEffect: railHit
+hitShake: 4
+length: 720
+pierceDamageFactor: 2.2
+buildingDamageMultiplier: 3
+status: melting
+statusDuration: 180
+ammoMultiplier: 2
+}
+}
+
+consumes: {
+power: 27
+coolant: {
+amount: 2.5
+}
+}
+
+research: foreshadow

@@ -1,0 +1,79 @@
+category: turret
+size: 4
+health: 2800
+range: 540
+requirements: [
+graphite/170
+silicon/170
+metaglass/120
+plastanium/120
+]
+
+drawer: {
+type: DrawTurret
+parts: [
+{
+type: RegionPart
+suffix: -closer
+mirror: true
+moveX: 1.5
+progress: warmup
+}
+]
+}
+
+outlineColor: 303030
+targetAir: true
+targetGround: true
+rotateSpeed: 4.2
+reload: 24
+shoot: {
+type: ShootAlternate
+shots: 4
+spread: 6.25
+barrels: 4
+}
+shootSound: missile
+coolantMultiplier: 1.1
+
+ammoTypes: {
+pyratite: {
+type: MissileBulletType
+speed: 6
+damage: 90
+status: burning
+statusDuration: 80
+lifetime: 60
+width: 9
+height: 16
+shrinkY: 0
+hitSize: 4
+homingRange: 250
+homingPower: 0.7
+shootEffect: none
+hitEffect: blastExplosion
+smokeEffect: none
+splashDamage: 120
+splashDamageRadius: 40
+makeFire: true
+incendChance: 0.2
+incendSpread: 1
+incendAmount: 0.5
+pierce: true
+reloadMultiplier: 1.2
+}
+gordium: {
+type: ShrapnelBulletType
+damage: 160
+width: 10
+length: 384
+serrations: 0
+knockback: -2
+fromColor: ffffff
+toColor: f5802c
+}
+}
+
+
+
+research: swarmer

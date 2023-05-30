@@ -1,0 +1,57 @@
+type: naval
+naval: true
+drag: 0.12
+accel: 0.6
+speed: 0.7
+rotateSpeed: 1.6
+armor: 6
+health: 1300
+targetAir: false
+targetGround: true
+hitSize: 18
+faceTarget: false
+singleTarget: true
+outlineRadius: 4
+immunities: [wet, slow, disarmed, fractal-madness]
+
+weapons: [
+{
+name: postulate-weapon
+top: true
+mirror: false
+y: -4.25
+x: 0
+reload: 36
+recoil: 1.5
+shootY: 2
+rotate: true
+rotateSpeed: 1.6
+shootSound: artillery
+ejectEffect: none
+bullet: {
+type: ArtilleryBulletType
+speed: 4
+lifetime: 80
+width: 8
+height: 6
+backColor: 74e1e8
+frontColor: 79eef2
+pierce: true
+pierceCap: 4
+pierceBuilding: true
+splashDamage: 90
+splashDamageRadius: 24
+trailColor: 79eef2
+trailChance: 0.5
+trailWidth: 8
+trailLength: 16
+collidesGround: true
+collidesAir: false
+reflectable: false
+hittable: false
+absorbable: true
+}
+}
+]
+
+research: tractate

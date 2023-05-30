@@ -1,0 +1,66 @@
+type: naval
+naval: true
+drag: 0.12
+accel: 0.8
+speed: 0.8
+rotateSpeed: 2
+health: 700
+hitSize: 12
+armor: 4
+targetAir: true
+targetGround: true
+immunities: [wet, slow, disarmed, fractal-madness]
+trailLength: 24
+trailScl: 1.5
+waveTrailX: 7
+waveTrailY: -9
+outlineRadius: 4
+faceTarget: false
+singleTarget: true
+
+weapons: [
+{
+name: tractate-shot
+top: true
+mirror: true
+y: -1.25
+x: 6.25
+shootY: 3
+recoil: 0.75
+reload: 12
+shootSound: shootAlt
+rotate: true
+rotateSpeed: 2
+bullet: {
+type: BasicBulletType
+speed: 4
+damage: 20
+lifetime: 30
+width: 6
+height: 8
+pierce: true
+pierceCap: 6
+collidesGround: true
+collidesAir: true
+status: fractal-madness
+statusDuration: 45
+shootEffect: shootSmall
+smokeEffect: shootSmallSmoke
+backColor: 74e1e8
+frontColor: 79eef2
+fragBullets: 1
+fragRandomSpread: 0
+fragSpread: 0
+fragBullet: {
+type: ShrapnelBulletType
+damage: 20
+length: 120
+width: 4
+serrations: 0
+knockback: 1
+fromColor: ffffff
+toColor: 79eef2
+}
+}
+}
+]
