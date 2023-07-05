@@ -1,0 +1,56 @@
+type: legs
+speed: 0.7
+drag: 0.1
+rotateSpeed: 3
+hitSize: 8
+armor: 2
+health: 200
+targetGround: true
+targetAir: true
+outlineColor: 262626
+outlineRadius: 4
+faceTarget: true
+
+hovering: true
+legContinuousMove: true
+legCount: 4
+legBaseOffset: 2
+legMoveSpace: 0.9
+legForwardScl: 1
+legLength: 8
+legExtension: -2
+legMinLength: 0.2
+legMaxLength: 1.1
+rippleScale: 0.24
+allowLegStep: true
+groundLayer: 62
+
+weapons: [
+{
+name: glitch-weapon
+top: false
+mirror: false
+y: 0
+x: 0
+shootY: 2.25
+reload: 9
+recoil: 0
+shootCone: 360
+shootSound: spark
+bullet: {
+type: LightningBulletType
+damage: 10
+lightningColor: 3ebd95
+lightningLength: 6
+lightningLengthRand: 6
+pierce: true
+hitEffect: hitLancer
+despawnEffect: none
+hittable: false
+reflectable: false
+keepVelocity: false
+}
+}
+]
+
+research: note
