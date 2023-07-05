@@ -24,7 +24,7 @@ top: false
 y: 0
 x: 0
 shootY: 2
-reload: 6
+reload: 12
 recoil: 0
 shootSound: release
 bullet: {

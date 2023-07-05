@@ -64,7 +64,6 @@ width: 7
 chargeEffect: {
 type: MultiEffect
 lifetime: 90
-followParent: true
 effects: [
 {
 type: WaveEffect

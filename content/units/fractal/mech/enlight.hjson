@@ -78,7 +78,7 @@ colorTo: 74e1e8
 }
 {
 type: ParticleEffect
-region: sundered-cross
+region: sundered-kunai
 sizeFrom: 32
 sizeTo: 0
 length: 0
@@ -180,7 +180,7 @@ colorTo: 74e1e8
 }
 {
 type: ParticleEffect
-region: sundered-cross
+region: sundered-kunai
 sizeFrom: 32
 sizeTo: 0
 length: 0
@@ -252,7 +252,7 @@ colorTo: 74e1e8
 }
 {
 type: ParticleEffect
-region: sundered-cross
+region: sundered-kunai
 length: 0
 lifetime: 20
 sizeFrom: 24

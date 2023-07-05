@@ -1,7 +1,7 @@
 type: ItemTurret
 category: turret
-size: 2
-health: 900
+size: 3
+health: 1200
 range: 160
 targetGround: true
 targetAir: true
@@ -27,30 +27,32 @@ basePrefix: religion-
 parts: [
 {
 type: RegionPart
-suffix: -blade
-mirror: true
+suffix: -main
 under: true
+progress: warmup
+}
+{
+type: RegionPart
+suffix: -front
+mirror: true
 progress: warmup
 moveY: 1
 moveX: 1
 }
 {
 type: RegionPart
-suffix: -wing-front
+suffix: -back
 mirror: true
-under: true
 progress: warmup
-moveY: -2
-moveX: 2
+moveY: -1
+moveX: 1
 }
 {
 type: RegionPart
-suffix: -wing-back
+suffix: -wing
 mirror: true
-under: true
 progress: warmup
-moveY: -2
-moveX: 2
+moveX: 3
 }
 ]
 }
