@@ -12,7 +12,6 @@ targetGround: true
 targetAir: true
 singleTarget: true
 outlineRadius: 4
-drawCell: false
 
 parts: [
 {
