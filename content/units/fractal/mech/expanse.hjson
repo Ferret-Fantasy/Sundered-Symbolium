@@ -1,0 +1,111 @@
+speed: 0.22
+rotateSpeed: 1.15
+buildSpeed: 5.6
+health: 64000
+hitSize: 52
+armor: 38
+mechSideSway: 1.1
+mechFrontSway: 0.9
+stepShake: 8
+mechStepParticles: true
+targetGround: true
+targetAir: true
+singleTarget: true
+outlineRadius: 4
+drawCell: false
+
+parts: [
+{
+type: RegionPart
+suffix: -spike-a
+mirror: true
+progress: warmup
+moveRot: -20
+x: 24.25
+y: -6
+}
+{
+type: RegionPart
+suffix: -spike-b
+mirror: true
+progress: warmup
+moveRot: -20
+x: 22.25
+y: -11
+}
+{
+type: RegionPart
+suffix: -spike-c
+mirror: true
+progress: warmup
+moveRot: -20
+x: 23.25
+y: -19
+}
+{
+type: RegionPart
+suffix: -jaw
+mirror: true
+progress: warmup
+moveY: 4
+}
+{
+type: RegionPart
+suffix: -mask-center
+progress: warmup
+under: true
+mirror: true
+}
+{
+type: RegionPart
+suffix: -mask-front
+moveY: 10.5
+moveX: 8.75
+progress: warmup
+mirror: true
+}
+]
+
+weapons: [
+{
+name: expanse-weapon
+mirror: false
+top: false
+y: 0
+x: 0
+reload: 340
+cooldownTime: 330
+continuous: true
+parentizeEffects: true
+recoil: 0
+shake: 8
+chargeSound: lasercharge
+shootSound: laserblast
+shootY: 0
+shoot: {
+type: ShootPattern
+firstShotDelay: 320
+shots: 16
+shotDelay: 9
+}
+bullet: {
+type: LaserBulletType
+damage: 400
+length: 440
+width: 28
+lifetime: 30
+colors: [74e1e8, 79eef2, ffffff]
+pierce: true
+pierceBuilding: true
+hitSize: 14
+largeHit: true
+hitEffect: shockwave
+despawnEffect: none
+shootEffect: none
+collidesAir: true
+collidesGround: true
+}
+}
+]
+
+research: time
