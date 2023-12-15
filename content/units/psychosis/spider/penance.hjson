@@ -1,0 +1,164 @@
+type: legs
+speed: 0.3
+drag: 0.1
+rotateSpeed: 1.6
+hitSize: 28
+armor: 11
+health: 10000
+targetGround: true
+targetAir: true
+outlineColor: 2e2c38
+outlineRadius: 4
+faceTarget: true
+
+hovering: true
+legContinuousMove: true
+legCount: 8
+legBaseOffset: 22
+legMoveSpace: 1.2
+legPairOffset: 6
+legLength: 60
+legLengthScl: 1.1
+legExtension: -20
+rippleScale: 0.24
+allowLegStep: true
+groundLayer: 75
+
+weapons: [
+{
+name: machine-gun
+x: 13
+y: -2
+
+reload: 25
+recoil: 3
+rotate: true
+rotateSpeed: 4.5
+mirror: true
+alternate: true
+shootY: 2.25
+
+bullet: {
+sprite: circle-bullet
+width: 10
+height: 10
+speed: 4
+lifetime: 40
+damage: 22
+pierce: true
+pierceBuilding: true
+pierceArmor: true
+hitEffect: none
+smokeEffect: {
+type: ParticleEffect
+particles: 8
+length: 35
+cone: 20
+lifetime: 35
+sizeFrom: 5
+sizeTo: 0
+colorFrom: 9b88c2
+colorTo: 9b88c2
+}
+shootEffect: {
+type: ParticleEffect
+particles: 7
+length: 35
+cone: 20
+lifetime: 20
+lenFrom: 13
+lenTo: 0
+strokeFrom: 3
+strokeTo: 0
+line: true
+colorFrom: 9b88c2
+colorTo: 9b88c2
+}
+despawnEffect: [
+{
+type: ParticleEffect
+particles: 1
+length: 0
+sizeFrom: 10
+sizeTo: 0
+colorFrom: 000000
+colorTo: 000000
+lifetime: 30
+layer: 99.9
+}
+{
+type: ParticleEffect
+particles: 1
+length: 0
+sizeFrom: 11
+sizeTo:0
+colorFrom: ffffff
+colorTo: ffffff
+region: sundered-kunai
+}
+{
+type: WaveEffect
+sides: 0
+sizeFrom: 10
+sizeTo: 0
+colorFrom: 9b88c2
+colorTo: 9b88c2
+lifetime: 30
+strokeFrom: 4
+strokeTo: 0
+layer: 100
+}
+]
+collidesTiles: false
+backColor: 686587
+hitColor: 686587
+frontColor: 9b88c2
+shrinkY: 0
+status: slow
+statusDuration: 42
+fragBullets: 1
+fragRandomSpread: 0
+fragAngle: 180
+fragVelocityMin: 1
+fragBullet: {
+width: 8
+height: 8
+sprite: circle-bullet
+pierceArmor: true
+hitSize: 7
+knockback: -3
+speed: 7
+status: self-destruction
+statusDuration: 4.2
+lifetime: 22.86
+damage: 75
+buildingDamageMultiplier: 0.7
+backColor: 6d56bf
+trailColor: 6d56bf
+hitColor: 6d56bf
+frontColor: bf92f9
+shrinkY: 0
+hitEffect: {
+type: ExplosionEffect
+waveColor: bf92f9
+smokeColor: BEBEBE
+sparks: 0
+waveStroke: 4
+waveRad: 20
+}
+despawnEffect: {
+type: ExplosionEffect
+waveColor: bf92f9
+smokeColor: BEBEBE
+sparks: 0
+waveStroke: 4
+waveRad: 20
+}
+trailWidth: 3
+trailLength: 16
+}
+}
+}
+]
+
+research: glitch

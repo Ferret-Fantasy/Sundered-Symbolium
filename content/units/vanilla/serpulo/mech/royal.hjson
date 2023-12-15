@@ -1,7 +1,7 @@
 speed: 0.27
 rotateSpeed: 0.8
-health: 56000
-armor: 24
+health: 79000
+armor: 30
 hitSize: 48
 mechFrontSway: 0.8
 mechSideSway: 0.5
@@ -29,8 +29,8 @@ bullet: {
 type: BasicBulletType
 speed: 18
 lifetime: 16
-damage: 120
-splashDamage: 40
+damage: 200
+splashDamage: 120
 splashDamageRadius: 32
 pierce: true
 pierceCap: 8
@@ -43,27 +43,62 @@ height: 44
 reflectable: true
 hittable: false
 absorbable: true
-fragRandomSpread: 360 
-fragBullets: 8
+fragBullets: 1
+fragRandomSpread: 0
+fragAngle: 180
+fragLifeMin: 1
+fragVelocityMin: 2
 fragBullet: {
 type: BasicBulletType
-speed: -12
-lifetime: 12
-damage: 50
-splashDamage: 30
+speed: 12
+lifetime: 18
+damage: 20
+splashDamage: 120
 splashDamageRadius: 16
-width: 10
-height: 22
+width: 20
+height: 44
 pierce: true
 pierceCap: 4
 pierceBuilding: true
 hitEffect: blastExplosion
+collidesTiles: false
 collidesAir: true
 collidesGround: true
 reflectable: false
 hittable: false
 absorbable: true
 }
+}
+}
+{
+name: royal-artillery
+mirror: true
+top: true
+layerOffset: 0.1
+y: -3.5
+x: 16.25
+shootY: 10
+recoil: 2
+reload: 75
+shake: 1
+ejectEffect: casing1
+inaccuracy: 4
+shootSound: artillery
+bullet: {
+type: ArtilleryBulletType
+speed: 6
+width: 16
+height: 16
+sprite: circle-bullet
+splashDamage: 160
+splashDamageRadius: 16
+lifetime: 80
+shootEffect: none
+smokeEffect: none
+despawnEffect: flakExplosion
+hitEffect: flakExplosion
+collidesGround: true
+collidesTiles: true
 }
 }
 ]

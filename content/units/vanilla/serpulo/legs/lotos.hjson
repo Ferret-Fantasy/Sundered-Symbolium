@@ -1,0 +1,94 @@
+type: legs
+hitSize: 36
+speed: 0.26
+drag: 0.12
+rotateSpeed: 1.2
+armor: 15
+range: 160
+health: 56000
+singleTarget: true
+targetAir: true
+targetGround: true
+outlineRadius: 4
+legCount: 6
+legMoveSpace: 0.6
+legBaseOffset: 16
+stepShake: 2
+rippleScale: 1.2
+legLength: 28
+legTrns: 0.6
+maxStretch: 1.3
+legSplashDamage: 200
+legSplashRange: 24
+shadowElevation: 0.6
+hovering: true
+groundLayer: 86
+
+weapons: [
+{
+name: lotos-weapon
+mirror: false
+top: false
+y: 0
+x: 0
+reload: 180
+cooldownTime: 160
+parentizeEffects: true
+recoil: 0
+shake: 8
+chargeSound: lasercharge
+shootSound: laserblast
+shootY: 0
+shoot: {
+type: ShootSpread
+shots: 15
+spread: 1.5
+}
+bullet: {
+type: BasicBulletType
+healPercent: 1.7
+damage: 40
+lifetime: 52
+speed: 10
+width: 12
+height: 24
+pierce: true
+pierceArmor: true
+pierceBuilding: true
+buildingDamageMultiplier: 6
+trailEffect: none
+hitEffect: none
+despawnEffect: none
+shootEffect: none
+collidesAir: true
+collidesGround: true
+collidesTeam: true
+frontColor: 84f591
+backColor: 61ad7e
+trailColor: 84f591
+trailWidth: 4
+trailLength: 16
+fragAngle: 180
+fragRandomSpread: 0
+fragSpread: 6
+fragVelocityMin: 1
+fragVelocityMax: 1
+fragBullets: 3
+fragBullet: {
+type: LaserBulletType
+damage: 100
+length: 520
+width: 10
+lifetime: 40
+largeHit: true
+pierce: true
+pierceArmor: true
+collidesTeam: true
+buildingDamageMultiplier: 6
+colors: [84f591, 84f591, 84f591, ffffff]
+}
+}
+}
+]
+
+research: corvus

@@ -9,7 +9,7 @@ armor: 4
 range: 320
 accel: 0.08
 drag: 0.04
-outlineColor: 262626
+outlineColor: 141414
 outlineRadius: 4
 singleTarget: true
 targetGround: true
@@ -42,5 +42,3 @@ maxRange: 320
 }
 }
 ]
-
-research: whistling

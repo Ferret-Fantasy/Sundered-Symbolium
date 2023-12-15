@@ -2,7 +2,7 @@ speed: 0.5
 rotateSpeed: 2.45
 buildSpeed: 1.2
 hitSize: 8
-health: 250
+health: 450
 armor: 3
 targetGround: true
 targetAir: true
@@ -12,31 +12,22 @@ mechLegColor: 565666
 singleTarget: true
 immunities: [fractal-madness, shocked]
 
-parts: [
-{
-type: RegionPart
-suffix: -segment
-mirror: true
-progress: warmup
-moveY: 1.25
-}
-]
-
 weapons: [
 {
 name: adept-weapon
 mirror: true
 top: false
-y: 1.75
-x: 5
+y: 0
+x: 6.5
 shootY: 3
+alternate: false
 shootSound: shoot
 reload: 12
 recoil: 0.75
 ejectEffect: casing1
 bullet: {
 type: BasicBulletType
-damage: 40
+damage: 20
 speed: 6
 width: 6
 lifetime: 30

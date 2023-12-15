@@ -9,29 +9,19 @@ metaglass/120
 plastanium/120
 ]
 
-drawer: {
-type: DrawTurret
-parts: [
-{
-type: RegionPart
-suffix: -closer
-mirror: true
-moveX: 1.5
-progress: warmup
-}
-]
-}
-
 outlineColor: 303030
 targetAir: true
 targetGround: true
 rotateSpeed: 4.2
-reload: 24
+reload: 12
+recoil: 2
+recoilTime: 6
 shoot: {
 type: ShootAlternate
 shots: 4
 spread: 6.25
 barrels: 4
+shotDelay: 4
 }
 shootSound: missile
 coolantMultiplier: 1.1

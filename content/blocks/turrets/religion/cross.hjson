@@ -9,7 +9,7 @@ rotateSpeed: 1.3
 reload: 15
 shootSound: laser
 outlineRadius: 4
-outlineColor: 303030
+outlineColor: 262626
 requirements: [
 silicon/20
 lead/20
@@ -27,32 +27,12 @@ basePrefix: religion-
 parts: [
 {
 type: RegionPart
-suffix: -main
-under: true
-progress: warmup
-}
-{
-type: RegionPart
 suffix: -front
 mirror: true
 progress: warmup
-moveY: 1
-moveX: 1
-}
-{
-type: RegionPart
-suffix: -back
-mirror: true
-progress: warmup
-moveY: -1
-moveX: 1
-}
-{
-type: RegionPart
-suffix: -wing
-mirror: true
-progress: warmup
-moveX: 3
+under: true
+moveY: -2
+moveX: 3.25
 }
 ]
 }

@@ -1,13 +1,13 @@
 speed: 0.27
 rotateSpeed: 1.27
 buildSpeed: 4.7
-health: 28000
-hitSize: 30
-armor: 21
-mechFrontSway: 0.7
-mechSideSway: 0.4
+health: 35000
+hitSize: 32
+armor: 26
+mechFrontSway: 1.8
+mechSideSway: 0.6
 mechLegColor: 565666
-stepShake: 0.8
+stepShake: 2
 mechStepParticles: true
 outlineColor: 565666
 outlineRadius: 4
@@ -15,22 +15,23 @@ targetGround: true
 targetAir: true
 singleTarget: true
 immunities: [fractal-madness, burning, slow, sapped, disarmed, corroded, wet]
+
 parts: [
 {
 type: RegionPart
-suffix: -mandible
 mirror: true
-moveX: 5.75
-moveY: 6.75
+under: true
+suffix: -mandible
+moveX: 12
+moveY: 3
 progress: warmup
-heatColor: 79eef2
 }
 {
 type: RegionPart
-suffix: -mask-back
 mirror: true
-moveX: -3
-moveY: -3
+suffix: -mask-front
+moveY: -0.75
+moveX: -2
 progress: warmup
 }
 ]
@@ -113,10 +114,21 @@ despawnEffect: smokeCloud
 }
 {
 name: time-gun
+parts: [
+{
+type: RegionPart
+mirror: false
+under: true
+suffix: -rail
+moveY: -4
+progress: recoil
+}
+]
+layerOffset: -0.001
 mirror: true
 top: false
-y: -0.25
-x: 23.75
+y: 0.5
+x: 24.75
 recoil: 4
 reload: 9
 shootY: 18
@@ -169,6 +181,51 @@ despawnEffect: none
 hitEffect: hitLaserBlast
 hitSize: 6
 }
+}
+}
+{
+name: missile
+x: 16
+y: -4
+mirror: true
+top: true
+rotate: true
+rotateSpeed: 2.25
+layerOffset: 0.001
+reload: 24
+recoil: 2
+ejectEffect: casing1
+shootSound: missile
+shoot: {
+type: ShootAlternate
+shots: 3
+spread: 4
+shotDelay: 7
+}
+bullet: {
+type: MissileBulletType
+sprite: circle-bullet
+speed: 7
+width: 8
+height: 8
+damage: 22
+lifetime: 90
+splashDamage: 90
+splashDamageRadius: 40
+keepVelocity: false
+shootEffect: none
+smokeEffect: none
+despawnHit: true
+hitSound: explosion
+homingRange: 120
+homingPower: 0.7
+frontColor: ffffff
+backColor: 72eef2
+trailColor: 72eef2
+pierce: true
+collidesAir: true
+collidesTiles: false
+collidesGround: true
 }
 }
 ]

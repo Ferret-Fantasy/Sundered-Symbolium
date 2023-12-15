@@ -8,12 +8,11 @@ mechFrontSway: 1.0
 mechSideSway: 0.4
 mechStepParticles: true
 singleTarget: true
-mechLegColor: 262626
-outlineColor: 262626
+mechLegColor: 141414
+outlineColor: 141414
 outlineRadius: 4
 targetGround: true
 targetAir: true
-drawShields: true
 healColor: af6cd9
 
 weapons: [
@@ -24,35 +23,118 @@ y: 0
 x: 0
 shootY: 8.5
 recoil: 18
-reload: 360
+reload: 240
 shootSound: artillery
 bullet: {
 type: ArtilleryBulletType
-speed: 6
+speed: 10
 width: 12
 height: 12
 sprite: shell
-lifetime: 72
+lifetime: 56
 frontColor: 8a3dba
 backColor: af6cd9
 shootEffect: none
 smokeEffect: none
 despawnEffect: none
-splashDamage: 240
-splashDamageRadius: 250
+splashDamage: 120
+splashDamageRadius: 400
 collidesGround: true
 collidesAir: true
-hitSound: release
+hitSound: plasmadrop
+hitEffect: {
+type: MultiEffect
+effects: [
+{
+type: WaveEffect
+sides: 0
+sizeFrom: 200
+sizeTo: 0
+strokeFrom: 0
+strokeTo: 8
+lifetime: 20
+colorFrom: af6cd9
+colorTo: 8a3dba
+}
+{
+type: WaveEffect
+sides: 0
+sizeFrom: 300
+sizeTo: 0
+strokeFrom: 0
+strokeTo: 8
+lifetime: 20
+colorFrom: af6cd9
+colorTo: 8a3dba
+}
+{
+type: WaveEffect
+sides: 0
+sizeFrom: 400
+sizeTo: 0
+strokeFrom: 0
+strokeTo: 8
+lifetime: 40
+colorFrom: af6cd9
+colorTo: 8a3dba
+}
+]
+}
+fragSpread: 30
+fragRandomSpread: 0
+fragVelocityMin: 1
+fragVelocityMax: 1
+fragBullets: 12
+fragBullet: {
+type: PointBulletType
+speed: 20
+lifetime: 20
+damage: 0
+shootEffect: none
+despawnEffect: none
+smokeEffect: none
+trailEffect: none
+hitEffect: none
+fragRandomSpread: 0
+fragSpread: 1.5
+fragAngle: 180
+fragVelocityMin: 1
+fragVelocityMax: 1
+fragBullets: 5
+fragBullet: {
+type: BasicBulletType
+damage: 320
+splashDamage: 280
+splashDamageRadius: 20
+sprite: missile-large
+speed: 20
+width: 12
+height: 18
+lifetime: 20
+pierce: true
+pierceCap: 16
+hitSound: plasmadrop
+pierceBuilding: true
 hitEffect: {
 type: WaveEffect
 sides: 0
 sizeFrom: 0
-sizeTo: 250
+sizeTo: 20
 strokeFrom: 0
 strokeTo: 8
-lifetime: 14
+lifetime: 40
 colorFrom: af6cd9
 colorTo: 8a3dba
+}
+shootEffect: none
+smokeEffect: none
+despawnEffect: none
+trailColor: af6cd9
+trailWidth: 6
+trailLength: 24
+frontColor: af6cd9
+backColor: 8a3dba
+}
 }
 }
 }
@@ -60,8 +142,8 @@ colorTo: 8a3dba
 name: shriek-cannon
 mirror: true
 top: false
-y: -0.5
-x: 21
+y: -0.75
+x: 20
 shootY: 11
 reload: 6
 recoil: 2

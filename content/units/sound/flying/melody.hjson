@@ -1,0 +1,38 @@
+isEnemy: false
+type: flying
+flying: true
+lowAltitude: true
+speed: 3
+drag: 0.04
+accel: 0.08
+health: 9000
+outlineRadius: 4
+outlineColor: 141414
+rotateSpeed: 3
+buildSpeed: 2.4
+mineSpeed: 1.4
+mineTier: 4
+armor: 20
+hitSize: 40
+buildRange: 800
+mineRange: 800
+targetAir: true
+targetGround: true
+drawEngine: false
+healColor: af6cd9
+
+abilities: [
+{
+type: RepairFieldAbility
+range: 800
+amount: 200
+reload: 120
+}
+{
+type: ForceFieldAbility
+max: 1500
+cooldown: 50
+regen: 50
+radius: 120
+}
+]

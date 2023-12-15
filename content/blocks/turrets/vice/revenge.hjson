@@ -1,0 +1,71 @@
+category: turret
+requirements: [
+titanium/200
+silicon/200
+plastanium/200
+]
+heatColor: 3ebd95
+size: 4
+health: 6000
+rotateSpeed: 1.6
+range: 400
+reload: 30
+recoil: 4
+shootEffect: shootBig
+shootCone: 30
+shootSound: artillery
+maxAmmo: 28
+ammoPerShot: 2
+ammoUseEffect: none
+targetAir: true
+targetGround: true
+outlineColor: 141414
+outlineRadius: 4
+shootY: 2
+shoot: {
+type: ShootMulti
+source: {
+type: ShootAlternate
+barrels: 3
+shots: 3
+spread: 6.5
+}
+dest: [
+{
+type: ShootHelix
+shots: 2
+mag: 1.5
+scl: 0.5
+}
+]
+}
+
+ammoTypes: {
+silicon: {
+type: FlakBulletType
+speed: 10
+lifetime: 40
+damage: 100
+splashDamage: 100
+splashDamageRadius: 24
+width: 10
+height: 10
+collidesAir: true
+collidesGround: true
+collidesTiles: false
+reflectable: false
+absorbable: true
+hittable: false
+pierce: true
+pierceCap: 14
+pierceBuilding: true
+frontColor: 3ebd95
+backColor: 129680
+trailColor: 3ebd95
+trailWidth: 5
+trailLength: 12
+trailChance: 0
+}
+}
+
+research: lie

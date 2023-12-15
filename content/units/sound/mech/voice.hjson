@@ -12,8 +12,8 @@ armor: 3
 targetAir: true
 targetGround: true
 singleTarget: true
-outlineColor: 262626
-mechLegColor: 262626
+outlineColor: 141414
+mechLegColor: 141414
 outlineRadius: 4
 
 weapons: [
@@ -21,7 +21,7 @@ weapons: [
 name: voice-bolter
 mirror: true
 top: false
-y: 1
+y: -1
 x: 6
 reload: 12
 recoil: 1.5

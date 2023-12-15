@@ -1,12 +1,12 @@
 speed: 0.22
 rotateSpeed: 1.15
 buildSpeed: 5.6
-health: 64000
+health: 92000
 hitSize: 52
-armor: 38
-mechSideSway: 1.1
-mechFrontSway: 0.9
-stepShake: 8
+armor: 42
+mechSideSway: 1
+mechFrontSway: 2.4
+stepShake: 4
 mechStepParticles: true
 targetGround: true
 targetAir: true
@@ -16,52 +16,19 @@ outlineRadius: 4
 parts: [
 {
 type: RegionPart
-suffix: -spike-a
-mirror: true
-progress: warmup
-moveRot: -20
-x: 24.25
-y: -6
-}
-{
-type: RegionPart
-suffix: -spike-b
-mirror: true
-progress: warmup
-moveRot: -20
-x: 22.25
-y: -11
-}
-{
-type: RegionPart
-suffix: -spike-c
-mirror: true
-progress: warmup
-moveRot: -20
-x: 23.25
-y: -19
-}
-{
-type: RegionPart
 suffix: -jaw
 mirror: true
-progress: warmup
+progress: reload
 moveY: 4
 }
 {
 type: RegionPart
-suffix: -mask-center
-progress: warmup
-under: true
-mirror: true
-}
-{
-type: RegionPart
 suffix: -mask-front
-moveY: 10.5
+moveY: 10.25
 moveX: 8.75
-progress: warmup
+progress: reload
 mirror: true
+heatColor: 79eef2
 }
 ]
 
@@ -72,27 +39,28 @@ mirror: false
 top: false
 y: 0
 x: 0
-reload: 340
-cooldownTime: 330
-continuous: true
+reload: 420
+cooldownTime: 400
 parentizeEffects: true
 recoil: 0
 shake: 8
 chargeSound: lasercharge
 shootSound: laserblast
 shootY: 0
+inaccuracy: 20
+heatColor: 79eef2
 shoot: {
+firstShotDelay: 60
 type: ShootPattern
-firstShotDelay: 320
-shots: 16
-shotDelay: 9
+shots: 10
+shotDelay: 6
 }
 bullet: {
 type: LaserBulletType
-damage: 400
-length: 440
+damage: 600
+length: 480
 width: 28
-lifetime: 30
+lifetime: 45
 colors: [74e1e8, 79eef2, ffffff]
 pierce: true
 pierceBuilding: true
@@ -101,6 +69,176 @@ largeHit: true
 hitEffect: shockwave
 despawnEffect: none
 shootEffect: none
+collidesAir: true
+collidesGround: true
+}
+}
+{
+name: expanse-fractaller
+parts: [
+{
+type: RegionPart
+suffix: -front-right
+progress: warmup
+mirror: false
+moveY: -4
+moveX: 2
+moveRot: -7.5
+}
+{
+type: RegionPart
+suffix: -front-left
+progress: warmup
+mirror: false
+moveY: -4
+moveX: -2
+moveRot: 7.5
+}
+{
+type: HaloPart
+tri: true
+shapes: 6
+triLength: 0
+triLengthTo: 12
+radius: 3
+haloRadius: 10
+haloRotation: 90
+stroke: 0
+strokeTo: 1
+progress: warmup
+layer: 110
+y: 30
+color: 79eef2
+}
+{
+type: HaloPart
+tri: true
+shapes: 6
+triLength: 0
+triLengthTo: 2
+radius: 3
+haloRadius: 10
+haloRotation: 90
+stroke: 0
+strokeTo: 1
+progress: warmup
+layer: 110
+y: 30
+color: 79eef2
+shapeRotation: 180
+}
+{
+type: HaloPart
+sides: 3
+hollow: true
+shape: 3
+radius: 0
+radiusTo: 2
+stroke: 0
+strokeTo: 1
+color: 79eef2
+layer: 110
+haloRadius: 8
+haloRotateSpeed: 4
+progress: warmup
+y: 30
+}
+{
+type: HaloPart
+sides: 3
+hollow: true
+shape: 3
+radius: 0
+radiusTo: 2
+stroke: 0
+strokeTo: 1
+color: 79eef2
+layer: 110
+haloRadius: 8
+haloRotateSpeed: -4
+progress: warmup
+y: 30
+}
+{
+type: ShapePart
+sides: 0
+circle: true
+color: 79eef2
+radius: 8
+stroke: 0
+strokeTo: 1
+layer: 110
+progress: warmup
+hollow: true
+y: 30
+}
+{
+type: ShapePart
+sides: 3
+color: 79eef2
+radius: 0
+radiusTo: 8
+stroke: 0
+strokeTo: 1
+rotateSpeed: 4
+layer: 110
+progress: warmup
+hollow: true
+y: 30
+}
+{
+type: ShapePart
+sides: 3
+color: 79eef2
+radius: 0
+radiusTo: 8
+stroke: 0
+strokeTo: 1
+rotateSpeed: -4
+layer: 110
+progress: warmup
+hollow: true
+y: 30
+}
+]
+mirror: true
+top: false
+layerOffset: -0.001
+x: 36.75
+y: 0.25
+recoil: 8
+reload: 21
+shootY: 20
+shootSound: missileLarge
+shoot: {
+type: ShootHelix
+shots: 2
+mag: 5
+scl: 1
+}
+bullet: {
+type: FlakBulletType
+speed: 18
+lifetime: 20
+width: 18
+height: 26
+damage: 200
+splashDamage: 100
+splashDamageRadius: 32
+shrinkX: 0
+shrinkY: 0
+frontColor: 79eef2
+backColor: 74e1e8
+trailColor: 79eef2
+trailWidth: 6
+trailLength: 12
+trailChance: 0
+reflectable: false
+absorbable: true
+hittable: false
+pierce: true
+pierceCap: 16
+pierceBuilding: true
 collidesAir: true
 collidesGround: true
 }

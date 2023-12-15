@@ -6,7 +6,7 @@ size: 5
 reload: 15
 targetAir: true
 targetGround: true
-outlineColor: 303030
+outlineColor: 141414
 outlineRadius: 4
 cooldownTime: 6
 recoil: 0

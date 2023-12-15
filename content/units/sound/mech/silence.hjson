@@ -1,17 +1,17 @@
 speed: 0.22
 rotateSpeed: 0.80
-hitSize: 54
+hitSize: 50
 health: 138000
-armor: 20
+armor: 48
 buildSpeed: 7.40
 mechFrontSway: 1.6
 mechSideSway: 1
 mechStride: 18
 stepShake: 4
 mechStepParticles: true
-mechLegColor: 262626
+mechLegColor: 141414
 singleTarget: true
-outlineColor: 262626
+outlineColor: 141414
 outlineRadius: 4
 targetAir: true
 targetGround: true
@@ -23,29 +23,45 @@ name: bluf
 top: false
 mirror: true
 y: 0
-x: 46
+x: 42.5
 layerOffset: -0.0001
 shootY: 26
-recoil: 6
-reload: 12
-shootSound: shoot
+recoil: 8
+reload: 18
+shootSound: plasmadrop
 shoot: {
-type: ShootPattern
+type: ShootMulti
+source: {
+type: ShootAlternate
 shots: 3
-shotDelay: 0.6
+barrels: 3
+spread: 6
+shotDelay: 5
+}
+dest:
+[
+{
+type: ShootPattern
+shots: 2
+shotDelay: 1.2
+}
+]
 }
 bullet: {
 type: BasicBulletType
-damage: 50
-sprite: sundered-wave-bullet
+damage: 120
+sprite: missile-large
 speed: 8
-width: 32
-height: 12
+width: 12
+height: 18
 lifetime: 60
 pierce: true
 pierceCap: 8
 shootEffect: shootSmall
 smokeEffect: shootSmallSmoke
+trailColor: af6cd9
+trailWidth: 6
+trailLength: 24
 frontColor: af6cd9
 backColor: 8a3dba
 }
@@ -57,46 +73,30 @@ top: false
 y: 0
 x: 0
 shootY: 21
-shootX: 0
-reload: 300
-cooldownTime: 280
+reload: 90
+recoil: 0
+shootSound: largeCannon
 shoot: {
 type: ShootPattern
-firstShotDelay: 42
+shots: 8
+shotDelay: 9
 }
-parentizeEffects: true
-continuous: true
-recoil: 0
-chargeSound: lasercharge2
-shootSound: beam
 bullet: {
-type: ContinuousLaserBulletType
-damage: 110
-lifetime: 480
-shootEffect: shootBigSmoke2
-chargeEffect: {
+type: BasicBulletType
+speed: 0
+spawnUnit: whistling
+shootEffect: {
 type: WaveEffect
 sides: 0
-sizeFrom: 72
-sizeTo: 0
-strokeFrom: 10
-strokeTo: 0
-lifetime: 32
+sizeFrom: 0
+sizeTo: 10
+strokeFrom: 0
+strokeTo: 4
 colorFrom: af6cd9
 colorTo: 8a3dba
+lifetime: 12
 }
-length: 320
-drawSize: 320
-hitEffect: hitMeltdown
-despawnEffect: smokeCloud
-hitColor: meltdownHit
-colors: [662299, 8a3dba, ffffff, ffffff]
-width: 11
-status: melting
-statusDuration: 90
-incendAmount: 1
-incendChance: 1.2
-incendSpread: 1
+smokeEffect: none
 }
 }
 ]
@@ -107,34 +107,6 @@ type: RepairFieldAbility
 amount: 1000
 reload: 560
 range: 112
-}
-{
-type: UnitSpawnAbility
-unit: whistling
-spawnX: 25.25
-spawnY: -8.5
-spawnTime: 1200
-}
-{
-type: UnitSpawnAbility
-unit: whistling
-spawnX: -25.25
-spawnY: -8.5
-spawnTime: 1200
-}
-{
-type: UnitSpawnAbility
-unit: laugh
-spawnX: 21.25
-spawnY: -19
-spawnTime: 1800
-}
-{
-type: UnitSpawnAbility
-unit: laugh
-spawnX: -21.25
-spawnY: -19
-spawnTime: 1800
 }
 {
 type: SpawnDeathAbility

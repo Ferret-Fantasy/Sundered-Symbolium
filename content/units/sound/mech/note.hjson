@@ -10,8 +10,8 @@ buildSpeed: 1.30
 health: 100
 targetAir: false
 targetGround: true
-outlineColor: 262626
-mechLegColor: 262626
+outlineColor: 141414
+mechLegColor: 141414
 outlineRadius: 4
 singleTarget: true
 healColor: af6cd9

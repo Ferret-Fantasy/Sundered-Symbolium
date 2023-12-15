@@ -1,11 +1,12 @@
 speed: 0.18
 rotateSpeed: 0.65
 health: 170000
-armor: 30
+armor: 70
 hitSize: 58
 mechStepParticles: true
 stepShake: 12
 outlineRadius: 4
+faceTarget: true
 singleTarget: true
 targetGround: true
 targetGround: true
@@ -17,39 +18,93 @@ mirror: true
 top: false
 x: 45
 shootY: 26
-reload: 11
-recoil: 8
-shootSound: bang
+reload: 24
+recoil: 6
+shoot: {
+shots: 8
+shotDelay: 1.5
+}
+shootSound: largeCannon
 bullet: {
 type: BasicBulletType
-speed: 120
-lifetime: 3
-damage: 220
+speed: 12
+lifetime: 30
+damage: 150
+shootCone: 120
 pierce: true
 pierceCap: 8
 pierceBuilding: true
 shootEffect: shootBig
 hitEffect: blastExplosion
+lightning: 5
+lightningDamage: 25
+lightningLength: 4
+lightningCone: 60
+lightningLengthRand: 7
 collidesGround: true
 collidesAir: true
-width: 20
-height: 44
+width: 15
+height: 33
 reflectable: true
 hittable: false
 absorbable: true
-fragRandomSpread: 360
-fragBullets: 12
-fragBullet: {
-type: LaserBulletType
-damage: 100
-width: 20
-length: 48
-hitSize: 10
-colors: [ffa666, ffa666, ffffff]
-pierce: true
-hitEffect: hitLaserBlast
-despawnEffect: none
 }
+}
+{
+name: frag-bomber
+top: true
+mirror: true
+x: 23.25
+y: -8.5
+reload: 35
+recoil: 4
+rotate: true
+rotateSpeed: 1.5
+shootSound: bang
+bullet: {
+type: ArtilleryBulletType
+sprite: large-bomb
+width: 10
+height: 22
+speed: 10
+lifetime: 30
+splashDamage: 200
+splashDamageRadius: 40
+}
+}
+{
+name: missile-launch
+top: true
+mirror: true
+x: 19.5
+y: 16.75
+reload: 15
+recoil: 3
+rotate: true
+rotateSpeed: 1.5
+shootSound: missile
+bullet: {
+type: MissileBulletType
+sprite: missile-large
+speed: 12
+width: 10
+height: 18
+damage: 22
+lifetime: 30
+splashDamage: 45
+splashDamageRadius: 40
+keepVelocity: false
+shootEffect: none
+smokeEffect: none
+despawnHit: true
+hitSound: explosion
+homingRange: 120
+homingPower: 0.7
+frontColor: ffffff
+pierce: true
+collidesAir: true
+collidesTiles: false
+collidesGround: true
 }
 }
 ]

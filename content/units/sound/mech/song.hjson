@@ -10,8 +10,8 @@ health: 800
 armor: 7
 mechFrontSway: 0.5
 singleTarget: true
-mechLegColor: 262626
-outlineColor: 262626
+mechLegColor: 141414
+outlineColor: 141414
 outlineRadius: 4
 targetGround: true
 targetAir: false
@@ -51,8 +51,8 @@ impact: true
 name: song-artillery
 mirror: true
 top: false
-y: 2
-x: 8
+y: -0.25
+x: 9.25
 shootY: 5.5
 recoil: 2
 reload: 75

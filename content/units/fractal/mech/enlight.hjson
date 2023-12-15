@@ -2,8 +2,8 @@ speed: 0.32
 rotateSpeed: 1.7
 buildSpeed: 2.1
 hitSize: 24
-health: 11200
-armor: 16
+health: 16200
+armor: 22
 targetAir: true
 targetGround: true
 outlineRadius: 4
@@ -20,10 +20,15 @@ parts: [
 {
 type: RegionPart
 suffix: -mandible
+moveY: 2.75
+moveX: 7
 mirror: true
+under: true
 progress: warmup
-moveY: 3
-moveX: 4
+}
+{
+type: RegionPart
+suffix: -front
 }
 ]
 
@@ -125,10 +130,33 @@ hitSize: 6
 }
 {
 name: enlight-sword
+parts: [
+{
+type: RegionPart
+suffix: -wing
+mirror: false
+moveY: 5
+progress: warmup
+}
+{
+type: RegionPart
+suffix: -coil
+mirror: false
+moveY: 4
+progress: warmup
+moves: [
+{
+progress: recoil
+y: -3
+}
+]
+}
+]
+layerOffset: -0.001
 mirror: true
 top: false
-y: -1.5
-x: 17
+y: -2.5
+x: 17.25
 shootY: 10
 reload: 20
 recoil: 3
@@ -209,6 +237,9 @@ smokeEffect: none
 despawnEffect: none
 collidesGround: true
 collidesAir: true
+keepVelocity: true
+fragVelocityMin: 0.4
+fragVelocityMax: 1
 fragBullets: 4
 fragRandomSpread: 0
 fragSpread: 30
@@ -236,6 +267,8 @@ collidesGround: true
 collidesAir: true
 reflectable: true
 absorbable: true
+keepVelocity: true
+backMove: true
 despawnEffect: none
 hitEffect: {
 type: MultiEffect
@@ -287,6 +320,53 @@ trailChance: 0
 }
 }
 }
+{
+name: small-fractal
+mirror: true
+top: true
+x: 12.25
+y: -4
+reload: 50
+recoil: 1.5
+shootY: 1
+shootCone: 360
+rotate: true
+rotateSpeed: 1.4
+shoot: {
+type: ShootMulti
+source: {
+type: ShootSpread
+shots: 4
+spread: 2
+}
+dest: [
+{
+type: ShootPattern
+shots: 3
+shotDelay: 2
+}
+]
+}
+
+shootSound: shoot
+bullet: {
+type: BasicBulletType
+homingPower: 0.4
+homingDelay: 3
+damage: 20
+speed: 10
+width: 7
+height: 12
+lifetime: 40
+collidesGround: true
+collidesAir: true
+hitColor: 79eef2
+trailColor: 79eef2
+trailChance: 0
+trailWidth: 2
+trailLength: 5
+}
+}
 ]
 
 abilities: [
@@ -303,7 +383,7 @@ statusDuration: 120
 maxTargets: 15
 sectors: 5
 color: 74c1e8
-y: 1.25
+y: 0
 targetAir: true
 targetGround: true
 hitBuildings: true

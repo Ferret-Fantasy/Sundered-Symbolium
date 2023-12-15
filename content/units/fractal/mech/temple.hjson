@@ -2,7 +2,7 @@ speed: 0.39
 rotateSpeed: 2.10
 buildSpeed: 1.7
 hitSize: 15
-health: 1200
+health: 2000
 armor: 12
 targetAir: false
 targetGround: true
@@ -19,9 +19,7 @@ type: RegionPart
 suffix: -mandible
 progress: warmup
 mirror: true
-moveX: -1.25
-moveY: 4.5
-moveRot: -45
+moveRot: -20
 }
 ]
 
@@ -94,8 +92,8 @@ incendSpread: 0.2
 name: temple-cannon
 mirror: true
 top: false
-y: 0.75
-x: 9
+y: 0.25
+x: 12.5
 shootY: 5.5
 reload: 18
 recoil: 1
@@ -126,7 +124,9 @@ pierceCap: 4
 hittable: true
 reflectable: true
 absorbable: true
-fragBullets: 4
+fragBullets: 8
+fragSpread: 45
+fragRandomSpread: 0
 fragBullet: {
 type: BasicBulletType
 speed: 4

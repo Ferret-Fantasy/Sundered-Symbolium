@@ -8,11 +8,11 @@ mechFrontSway: 1.2
 mechSideSway: 0.5
 stepShake: 3
 mechStepParticles: true
-mechLegColor: 262626
+mechLegColor: 141414
 singleTarget: true
 targetAir: true
 targetGround: true
-outlineColor: 262626
+outlineColor: 141414
 outlineRadius: 4
 
 weapons: [
@@ -20,7 +20,7 @@ weapons: [
 name: whisper-railgun
 mirror: false
 top: true
-y: -3
+y: -4.75
 x: 0
 shootY: 4
 rotate: false
@@ -98,8 +98,9 @@ buildingDamageMultiplier: 1.2
 }
 }
 {
-name: gun
+name: whisper-cannon
 mirror: true
+layerOffset: -0.001
 top: false
 y: -0.25
 x: 27.5

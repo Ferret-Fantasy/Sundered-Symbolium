@@ -2,7 +2,7 @@ speed: 0.45
 rotateSpeed: 2.30
 buildSpeed: 1.4
 hitSize: 11
-health: 580
+health: 780
 armor: 7
 targetGround: true
 targetAir: true
@@ -11,37 +11,6 @@ outlineRadius: 4
 mechLegColor: 565666
 singleTarget: true
 immunities: [fractal-madness, shocked, burning]
-
-parts: [
-{
-type: RegionPart
-suffix: -stabilization-segment
-mirror: true
-progress: warmup
-moveY: 0.75
-}
-{
-type: RegionPart
-suffix: -stabilization-segment
-mirror: true
-progress: warmup
-moveY: 1.5
-}
-{
-type: RegionPart
-suffix: -stabilization-segment
-mirror: true
-progress: warmup
-moveY: 2.25
-}
-{
-type: RegionPart
-suffix: -stabilization-segment
-mirror: true
-progress: warmup
-moveY: 3
-}
-]
 
 weapons: [
 {
@@ -77,8 +46,8 @@ keepVelocity: false
 name: clear-gun
 mirror: true
 top: false
-y: 1.75
-x: 5.75
+y: 0
+x: 9.25
 shootY: 5
 reload: 24
 recoil: 1.5
@@ -91,7 +60,7 @@ shotDelay: 2
 shootSound: shoot
 bullet: {
 type: BasicBulletType
-damage: 40
+damage: 20
 lifetime: 40
 speed: 4
 width: 6

@@ -4,7 +4,7 @@ health: 700
 range: 440
 targetAir: true
 targetGround: true
-outlineColor: 303030
+outlineColor: 262626
 outlineRadius: 4
 recoil: 2.5
 rotateSpeed: 2.5
@@ -13,6 +13,20 @@ reload: 120
 shootSound: railgun
 consumes: {
 power: 4.5
+}
+
+drawer: {
+type: DrawTurret
+parts: [
+{
+type: RegionPart
+suffix: -heart
+under: true
+progress: recoil
+moveY: -5
+mirror: false
+}
+]
 }
 
 requirements: [
@@ -47,7 +61,7 @@ hitSound: release
 fragBullets: 1
 fragRandomSpread: 360
 fragBullet: {
-type: BasicBulletType
+type: BulletType
 pierce: true
 hitSize: 4
 lifetime: 20

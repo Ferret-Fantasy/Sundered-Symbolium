@@ -1,0 +1,61 @@
+type: legs
+health: 21000
+speed: 0.44
+armor: 18
+drag: 0.1
+hitSize: 36
+fogRadius: 48
+outlineColor: 2e2c38
+outlineRadius: 4
+rotateSpeed: 2.2
+stepShake: 0
+hovering: true
+legContinuousMove: true
+legCount: 8
+legBaseOffset: 22
+legMoveSpace: 1.2
+legPairOffset: 12
+legLength: 90
+legLengthScl: 1.1
+legExtension: -20
+rippleScale: 0.24
+allowLegStep: true
+groundLayer: 75
+
+weapons: [
+{
+name: large-machine-gun
+x: 17.75
+y: -12.25
+
+reload: 12
+recoil: 4
+rotate: true
+rotateSpeed: 4
+mirror: true
+alternate: true
+shootY: -1.25
+shootSound: spark
+
+shoot: {
+type: ShootAlternate
+shots: 2
+spread: 4
+shotDelay: 12
+}
+
+bullet: {
+type: LightningBulletType
+lightningLength: 24
+rangeOverride: 144
+collidesAir: true
+hitColor: 9b88c2
+lightningColor: 9b88c2
+damage: 22
+status: slow
+statusDuration: 180
+}
+}
+]
+
+research: penance

@@ -10,7 +10,7 @@ const shock = extend(ItemTurret, "shock", {});
 
 const lie = extend(PowerTurret, "lie", {});
 
-const traitor = extend(ItemTurret, "traitor", {});
+const revenge = extend(ItemTurret, "revenge", {});
 
 const envious = extend(ItemTurret, "envious", {});
 

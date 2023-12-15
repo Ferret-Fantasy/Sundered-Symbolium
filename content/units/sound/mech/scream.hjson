@@ -14,8 +14,8 @@ targetAir: true
 singleTarget: true
 mechFrontSway: 0.6
 mechSideSway: 0.4
-outlineColor: 262626
-mechLegColor: 262626
+outlineColor: 141414
+mechLegColor: 141414
 outlineRadius: 4
 
 weapons: [
@@ -23,8 +23,8 @@ weapons: [
 name: scream-gun
 mirror: true
 top: false
-y: -0.5
-x: 14.5
+y: 0
+x: 16.25
 shootY: 8
 reload: 30
 recoil: 1.5

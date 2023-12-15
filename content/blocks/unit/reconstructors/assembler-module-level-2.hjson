@@ -1,0 +1,14 @@
+type: UnitAssemblerModule
+size: 5
+tier: 2
+regionSuffix: -dark
+consumes: {
+power: 5
+}
+
+requirements: [
+carbide/500
+thorium/700
+oxide/400
+phase-fabric/300
+]

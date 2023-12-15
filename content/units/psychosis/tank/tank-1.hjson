@@ -1,0 +1,89 @@
+type: tank
+template: TankUnitType
+hitSize: 12
+speed: 0.8
+rotateSpeed: 2.7
+armor: 10
+health: 980
+itemCapacity: 0
+outlineColor: 1d1d21
+outlineRadius: 4
+treadPullOffset: 5.5
+treadRects: [
+{
+x: 5.5
+y: 0
+width: 2
+height: 15
+}
+]
+
+weapons: [
+{
+name: gatling
+recoils: 3
+parts: [
+{
+type: RegionPart
+suffix: -barrel-l
+progress: recoil
+recoilIndex: 0
+moveY: -1.5
+under: true
+mirror: false
+outline: true
+}
+{
+type: RegionPart
+suffix: -barrel-center
+progress: recoil
+recoilIndex: 1
+moveY: -1.5
+under: true
+mirror: false
+outline: true
+}
+{
+type: RegionPart
+suffix: -barrel-r
+progress: recoil
+recoilIndex: 2
+moveY: -1.5
+under: true
+mirror: false
+outline: true
+}
+]
+x: 0
+y: 0
+top: true
+layerOffset: 0.1
+shootY: 4
+reload: 3
+rotate: true
+shootCone: 12
+rotateSpeed: 3.2
+recoil: 0
+mirror: false
+shoot: {
+type: ShootBarrel
+barrels: [-2, 0, 0, 0, 0, 0, 2, 0, 0]
+}
+bullet: {
+type: BasicBulletType
+damage: 50
+speed: 10
+width: 1.5
+height: 3
+trailLength: 5
+trailWidth: 2
+trailColor: 3ebd95
+lifetime: 15
+hitSize: 3
+frontColor: 3ebd95
+backColor: 129680
+pierce: true
+pierceCap: 4
+}
+}
+]

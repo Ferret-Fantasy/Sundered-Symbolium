@@ -26,20 +26,13 @@ const sufferer = extend(UnitType, "sufferer", {});
 sufferer.constructor = () => extend(MechUnit, {});
 
 //Unit, Sound, Air (Юниты, Звук, Воздух)
-const whistling = extend(UnitType, "whistling", {});
-whistling.constructor = () => extend(UnitEntity, {});
-whistling.controller = (u) => extend(SuicideAI, {})
+const whistling = extend(MissileUnitType, "whistling", {
+engineLayer: Layer.effect,
+});
 
 const laugh = extend(UnitType, "laugh", {});
 laugh.constructor = () => extend(UnitEntity, {});
 laugh.controller = (u) => extend(DefenderAI, {});
-
-const symphony = extend(UnitType, "symphony", {});
-symphony.constructor = () => extend(UnitEntity, {});
-symphony.controller = (u) => extend(BuilderAI, {
-buildRadius: 8000,
-});
-symphony.command = (u) => extend(RebuildCommand, {});
 
 //Unit, Fractal (Юниты, Фрактал) 
 
@@ -57,6 +50,9 @@ enlight.constructor = () => extend(MechUnit, {});
 
 const time = extend(UnitType, "time", {});
 time.constructor = () => extend(MechUnit, {});
+
+const expanse = extend(UnitType, "expanse", {});
+expanse.constructor = () => extend(MechUnit, {});
 
 
 //Юниты, Ванилла, Серпуло
