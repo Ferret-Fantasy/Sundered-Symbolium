@@ -1,0 +1,74 @@
+type: legs
+health: 2400
+hitSize: 19
+armor: 15
+speed: 0.58
+drag: 0.1
+rotateSpeed: 2
+targetGround: true
+targetAir: true
+faceTarget: true
+outlineRadius: 4
+outlineColor: 0f0f0f
+hovering: true
+legContinuousMove: true
+alwaysShootWhenMoving: true
+lockLegBase: true
+legCount: 6
+legBaseOffset: 5
+legGroupSize: 2
+legMoveSpace: 1.5
+legForwardScl: 1.2
+legLength: 30
+legExtension: -5.5
+legMinLength: 0.5
+legMaxLength: 1.2
+legLengthScl: 1
+rippleScale: 0.24
+allowLegStep: true
+groundLayer: 75
+shadowElevation: 0.5
+
+parts: [
+{
+type: RegionPart
+suffix: -wing
+moveX: 2
+moveRot: -17
+progress: warmup
+mirror: true
+}
+]
+
+
+weapons: [
+{
+name: void-strider-weapon
+y: 0
+x: 0
+mirror: false
+top: false
+reload: 20
+shootSound: plasmadrop
+recoil: 0
+shootCone: 225
+bullet: {
+type: BasicBulletType
+damage: 120
+sprite: missile-large
+speed: 8
+width: 12
+height: 18
+lifetime: 60
+pierce: true
+pierceCap: 8
+shootEffect: shootSmall
+smokeEffect: shootSmallSmoke
+trailColor: af6cd9
+trailWidth: 4
+trailLength: 24
+frontColor: af6cd9
+backColor: 8a3dba
+}
+}
+]

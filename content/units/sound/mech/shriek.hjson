@@ -23,7 +23,7 @@ y: 0
 x: 0
 shootY: 8.5
 recoil: 18
-reload: 240
+reload: 1200
 shootSound: artillery
 bullet: {
 type: ArtilleryBulletType
@@ -37,7 +37,9 @@ backColor: af6cd9
 shootEffect: none
 smokeEffect: none
 despawnEffect: none
-splashDamage: 120
+pierce: true
+buildingDamageMultiplier: 0.1
+splashDamage: 500
 splashDamageRadius: 400
 collidesGround: true
 collidesAir: true
@@ -95,6 +97,7 @@ despawnEffect: none
 smokeEffect: none
 trailEffect: none
 hitEffect: none
+pierce: true
 fragRandomSpread: 0
 fragSpread: 1.5
 fragAngle: 180
@@ -112,7 +115,7 @@ width: 12
 height: 18
 lifetime: 20
 pierce: true
-pierceCap: 16
+buildingDamageMultiplier: 0.1
 hitSound: plasmadrop
 pierceBuilding: true
 hitEffect: {
@@ -155,7 +158,8 @@ damage: 152
 length: 196
 width: 11
 serrations: 0
-knockback: -0.5
+knockback: 4
+buildingDamageMultiplier: 0.01
 smokeEffect: none
 despawnEffect: none
 shootEffect: {

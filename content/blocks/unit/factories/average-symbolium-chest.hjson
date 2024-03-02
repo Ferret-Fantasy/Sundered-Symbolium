@@ -31,15 +31,6 @@ titanium/60
 ]
 time: 600
 }
-{
-unit: tractate
-requirements: [
-silicon/60
-metaglass/30
-graphite/40
-]
-time: 600
-}
 ]
 
 research: small-symbolium-chest

@@ -7,7 +7,7 @@ buildSpeed: 7.40
 mechFrontSway: 1.6
 mechSideSway: 1
 mechStride: 18
-stepShake: 4
+stepShake: 12
 mechStepParticles: true
 mechLegColor: 141414
 singleTarget: true
@@ -19,7 +19,7 @@ healColor: af6cd9
 
 weapons: [
 {
-name: bluf
+name: silenter
 top: false
 mirror: true
 y: 0
@@ -60,7 +60,7 @@ pierceCap: 8
 shootEffect: shootSmall
 smokeEffect: shootSmallSmoke
 trailColor: af6cd9
-trailWidth: 6
+trailWidth: 4
 trailLength: 24
 frontColor: af6cd9
 backColor: 8a3dba

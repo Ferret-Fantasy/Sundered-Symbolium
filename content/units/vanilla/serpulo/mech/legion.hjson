@@ -4,7 +4,7 @@ health: 170000
 armor: 70
 hitSize: 58
 mechStepParticles: true
-stepShake: 12
+stepShake: 16
 outlineRadius: 4
 faceTarget: true
 singleTarget: true
@@ -29,7 +29,7 @@ bullet: {
 type: BasicBulletType
 speed: 12
 lifetime: 30
-damage: 150
+damage: 420
 shootCone: 120
 pierce: true
 pierceCap: 8
@@ -37,7 +37,7 @@ pierceBuilding: true
 shootEffect: shootBig
 hitEffect: blastExplosion
 lightning: 5
-lightningDamage: 25
+lightningDamage: 75
 lightningLength: 4
 lightningCone: 60
 lightningLengthRand: 7
@@ -68,8 +68,8 @@ width: 10
 height: 22
 speed: 10
 lifetime: 30
-splashDamage: 200
-splashDamageRadius: 40
+splashDamage: 300
+splashDamageRadius: 60
 }
 }
 {
@@ -83,16 +83,23 @@ recoil: 3
 rotate: true
 rotateSpeed: 1.5
 shootSound: missile
+shoot: {
+type: ShootAlternate
+shots: 3
+barrels: 3
+spread: 4
+shotDelay: 4
+}
 bullet: {
 type: MissileBulletType
 sprite: missile-large
 speed: 12
 width: 10
 height: 18
-damage: 22
+damage: 210
 lifetime: 30
-splashDamage: 45
-splashDamageRadius: 40
+splashDamage: 100
+splashDamageRadius: 60
 keepVelocity: false
 shootEffect: none
 smokeEffect: none

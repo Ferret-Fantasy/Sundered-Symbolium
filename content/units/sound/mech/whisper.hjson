@@ -135,19 +135,29 @@ recoil: 1.75
 ejectEffect: casing1
 shootSound: missile
 shoot: {
-type: ShootAlternate
+type: ShootMulti
+source: {
+type: ShootSpread
+shots: 8
+spread: 2
+}
+dest: [
+{
+type: ShootHelix
 shots: 2
-spread: 4
-shotDelay: 20
+mag: 3
+scl: 2
+}
+]
 }
 bullet: {
 type: MissileBulletType
-sprite: circle-bullet
-speed: 5
-width: 8
-height: 8
+sprite: shell
+speed: 12
+width: 10
+height: 16
 damage: 22
-lifetime: 90
+lifetime: 24
 splashDamage: 90
 splashDamageRadius: 40
 keepVelocity: false
@@ -160,6 +170,9 @@ homingPower: 0.7
 frontColor: ffffff
 backColor: af6cd9
 trailColor: af6cd9
+trailWidth: 3
+trailLength: 12
+trailChance: 0
 pierce: true
 collidesAir: true
 collidesTiles: false

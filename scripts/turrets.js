@@ -6,7 +6,7 @@ const godkiller = extend(ItemTurret, "godkiller", {});
 //Turrets, Vice (Турели, Порок)
 const psycho = extend(ItemTurret, "psycho", {});
 
-const shock = extend(ItemTurret, "shock", {});
+const shock = extend(PowerTurret, "shock", {});
 
 const lie = extend(PowerTurret, "lie", {});
 

@@ -3,7 +3,7 @@ rotateSpeed: 0.6
 buildSpeed: 10
 hitSize: 120
 health: 2460000
-armor: 72
+armor: 120
 range: 450
 maxRange: 440
 fogRadius: 48
@@ -35,24 +35,29 @@ shootY: 22
 recoil: 0
 shake: 8
 reload: 750
-showStatSprite: true
 cooldownTime: 1080
 parentizeEffects: true
 continuous: true
 chargeSound: lasercharge2
 shootSound: beam
+shootStatus: self-destruction
+shootStatusDuration: 600
 shoot: {
 type: ShootPattern
 firstShotDelay: 90
 }
 bullet: {
 type: ContinuousLaserBulletType
+pierceArmor: true
 damage: 500
-length: 450
-drawSize: 450
+buildingDamageMultiplier: 0.25
+length: 720
+drawSize: 720
 lifetime: 600
-status: self-destruction
-statusDuration: 600
+collides: true
+collidesTeam: true
+collidesAir: true
+collidesGround: true
 chargeEffect: {
 type: WaveEffect
 sides: 0
@@ -83,7 +88,6 @@ x: 87.5
 shootY: 45
 recoil: 8
 reload: 24
-squareSprite: true
 shootSound: bang
 shoot: {
 type: ShootHelix
@@ -92,8 +96,10 @@ scl: 2
 mag: 6
 }
 bullet: {
-type: BasicBulletType
-damage: 1200
+type: EmpBulletType
+pierceArmor: true
+damage: 2400
+buildingDamageMultiplier: 0.1
 splashDamage: 1000
 splashDamageRadius: 80
 speed: 10
@@ -131,3 +137,17 @@ backColor: 8a3dba
 }
 ]
 
+abilities: [
+{
+type: StatusFieldAbility
+effect: self-destruction
+onShoot: true
+duration: 600
+reload: 1200
+effectX: 0
+effectY: 0
+range: 48
+applyEffect: none
+activeEffect: overdriveWave
+}
+]

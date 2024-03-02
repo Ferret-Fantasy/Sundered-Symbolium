@@ -36,6 +36,42 @@ groundLayer: 86
 
 weapons: [
 {
+name: silus-weapon
+top: false
+mirror: false
+x: 0
+y: 0
+shootY: 3
+reload: 210
+recoil: 0
+shootSound: bang
+bullet: {
+type: FlakBulletType
+damage: 324
+speed: 4
+lifetime: 100
+lightRadius: 40
+lightOpacity: 0.9
+frontColor: ffffff
+lightColor: 8ba9e8
+backColor: 8ba9e8
+hitColor: 8ba9e8
+shootEffect: shootBigColor
+smokeEffect: shootSmokeSquareBig
+trailWidth: 6
+trailLength: 24
+trailEffect: none
+trailColor: 8ba9e8
+collidesTiles: true
+collides: true
+collidesGround: true
+collidesAir: false
+reflectable: false
+hittable: false
+absorbable: false
+}
+}
+{
 name: silus-cannon
 mirror: true
 y: -20
@@ -47,13 +83,13 @@ shake: 6
 layerOffset: 0.02
 shadow: 10
 rotate: true
-rotateSpeed: 0.8
-rotationLimit: 60
+rotateSpeed: 1.2
+rotationLimit: 70
 shootSound: pulseBlast
 shoot: {
 type: ShootSpread
-shots: 3
-spread: 5
+shots: 5
+spread: 4
 }
 bullet: {
 type: ArtilleryBulletType

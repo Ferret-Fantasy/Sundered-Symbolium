@@ -27,6 +27,8 @@ warmstadtium/700
 upgrades: [
 [shriek, whisper]
 [reign, royal]
+[corvus, lotos]
+[time, expanse]
 ]
 
 constructTime: 21000

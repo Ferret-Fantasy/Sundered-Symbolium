@@ -13,8 +13,8 @@ targetGround: true
 outlineColor: 141414
 mechLegColor: 141414
 outlineRadius: 4
-singleTarget: true
 healColor: af6cd9
+singleTarget: true
 
 weapons: [
 {
@@ -27,6 +27,7 @@ shootY: 2
 reload: 12
 recoil: 0
 shootSound: release
+shootCone: 270
 bullet: {
 type: BasicBulletType
 damage: 12
@@ -35,6 +36,7 @@ speed: 6
 width: 9
 lifetime: 40
 height: 6
+buildingDamageMultiplier: 0.1
 shootEffect: {
 type: ParticleEffect
 region: sundered-spikething
@@ -57,7 +59,7 @@ abilities: [
 {
 type: RepairFieldAbility
 amount: 6
-reload: 18
+reload: 36
 range: 32
 }
 ]

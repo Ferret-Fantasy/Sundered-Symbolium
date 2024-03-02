@@ -1,0 +1,29 @@
+type: Drill
+category: production
+size: 3
+tier: 6
+drillTime: 180
+hasPower: true
+drillEffect: mineBig
+updateEffect: pulverizeMedium
+
+requirements: [
+silicon/150
+titanium/120
+thorium/100
+]
+
+consumes: {
+power: 0.98
+liquid: {
+liquid: water
+amount: 2.8
+booster: true
+optional: true
+update: true
+}
+}
+
+itemCapacity: 80
+liquidCapacity: 16
+rotateSpeed: 12

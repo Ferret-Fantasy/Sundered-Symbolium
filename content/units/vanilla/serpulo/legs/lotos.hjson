@@ -22,7 +22,7 @@ legSplashDamage: 200
 legSplashRange: 24
 shadowElevation: 0.6
 hovering: true
-groundLayer: 86
+groundLayer: 80
 
 weapons: [
 {

@@ -1,0 +1,48 @@
+groundLayer: 86
+singleTarget: true
+drawShields: false
+lightRadius: 120
+type: legs
+outlineRadius: 4
+canDrown: false
+speed: 0.2
+hitSize: 56
+health: 120000
+armor: 35
+drag: 0.2
+drownTimeMultiplier: 7
+flying: false
+targetAir: true
+rotateSpeed: 1.4
+legCount: 6
+legMoveSpace: 0.7
+legLength: 48
+legBaseOffset: 24
+legTrns: 0.6
+landShake: 1
+legSpeed: 0.24
+rippleScale: 10.5
+legSplashDamage: 200
+legSplashRange: 36
+visualElevation: 0.65
+allowLegStep: true
+hovering: true
+
+weapons: [
+{
+name: salvation-weapon
+y: 0
+x: 0
+top: false
+mirror: false
+}
+]
+
+
+abilities: [
+{
+type: 
+}
+]
+
+research: lotos

@@ -1,0 +1,64 @@
+type: PowerTurret
+category: turret
+size: 7
+health: 24000
+targetAir: true
+targetGround: true
+outlineColor: 141414
+shootSound: laser
+shootY: 0
+rotateSpeed: 4
+
+requirements: [
+thorium/1600
+silicon/2000
+plastanium/300
+surge-alloy/300
+]
+
+shoot: {
+type: ShootMulti
+source: {
+type: ShootSpread
+shots: 6
+spread: 60
+}
+dest: [
+{
+type: ShootSpread
+shots: 120
+spread: 3
+shotDelay: 2
+}
+]
+}
+
+range: 600
+reload: 480
+recoil: 0
+consumes: {
+power: 32
+}
+
+shootType: {
+type: LaserBulletType
+lifetime: 30
+damage: 750
+pierce: true
+pierceBuilding: true
+collidesGround: true
+collidesAir: true
+length: 600
+drawSize: 600
+colors: [3ebd95, 30ffd9, ffffff]
+pierce: true
+pierceBuilding: true
+buildingDamageMultiplier: 0.4
+width: 30
+hitEffect: hitLancer
+sideAngle: 165
+sideWidth: 1.2
+sideLength: 15
+}
+
+research: treason

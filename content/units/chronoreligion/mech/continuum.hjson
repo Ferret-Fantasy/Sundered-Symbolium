@@ -1,0 +1,255 @@
+type: mech
+speed: 0.16
+rotateSpeed: 0.95
+buildSpeed: 5.6
+health: 210000
+hitSize: 72
+armor: 90
+mechSideSway: 1.4
+mechFrontSway: 2.8
+stepShake: 10
+mechStepParticles: true
+targetGround: true
+targetAir: true
+singleTarget: true
+outlineRadius: 4
+
+parts: [
+{
+type: RegionPart
+suffix: -mask-back
+mirror: true
+moveY: 9
+moveX: 17.5
+progress: warmup
+}
+{
+type: RegionPart
+suffix: -mask-center
+mirror: true
+moveRot: -90
+moveY: 14
+moveX: 12.5
+progress: warmup
+}
+{
+type: RegionPart
+suffix: -mask-front
+mirror: true
+moveY: 4
+moveX: 22.5
+moveRot: -45
+progress: warmup
+}
+]
+
+weapons: [
+{
+name: continuum-weapon
+x: 0
+y: 0
+mirror: false
+top: false
+reload: 240
+recoil: 0
+shootSound: largeCannon
+bullet: {
+type: FlakBulletType
+speed: 20
+lifetime: 32
+width: 50
+height: 50
+damage: 1400
+splashDamage: 600
+splashDamageRadius: 32
+shrinkX: 0
+shrinkY: 0
+frontColor: 79eef2
+backColor: 74e1e8
+trailColor: 79eef2
+trailWidth: 14
+trailLength: 24
+trailChance: 0
+reflectable: false
+absorbable: true
+hittable: false
+pierce: true
+pierceCap: 16
+pierceBuilding: true
+collidesAir: true
+collidesGround: true
+intervalBullets: 10
+intervalAngle: 180
+intervalRandomSpread: 0
+bulletInterval: 3
+intervalSpread: 5
+intervalBullet: {
+type: FlakBulletType
+speed: 24
+lifetime: 10
+width: 25
+height: 25
+damage: 700
+splashDamage: 300
+splashDamageRadius: 32
+shrinkX: 0
+shrinkY: 0
+frontColor: 79eef2
+backColor: 74e1e8
+trailColor: 79eef2
+trailWidth: 8
+trailLength: 14
+trailChance: 0
+reflectable: false
+absorbable: true
+hittable: false
+pierce: true
+pierceCap: 16
+pierceBuilding: true
+collidesAir: true
+collidesGround: true
+}
+}
+}
+{
+name: continuum-traccer-cannon
+parts: [
+{
+type: RegionPart
+suffix: -back-r
+progress: warmup
+moveY: -2
+mirror: false
+}
+{
+type: RegionPart
+suffix: -back-l
+progress: warmup
+moveY: -6
+mirror: false
+}
+{
+type: RegionPart
+suffix: -face
+progress: warmup
+moveY: 3
+mirror: false
+}
+{
+type: RegionPart
+suffix: -mandible-r
+progress: warmup
+moveY: 4
+moveRot: -7.5
+mirror: false
+under: true
+}
+{
+type: RegionPart
+suffix: -mandible-l
+progress: warmup
+moveY: 4
+moveRot: 7.5
+mirror: false
+under: true
+}
+]
+mirror: true
+top: false
+x: 57
+y: -0.25
+layerOffset: -0.01
+recoil: 8
+reload: 21
+shootY: 34
+shootSound: missileLarge
+shoot: {
+type: ShootMulti
+source: {
+type: ShootHelix
+shots: 2
+mag: 5
+scl: 1
+}
+dest: [
+{
+type: ShootHelix
+shots: 2
+mag: 5
+scl: 2
+}
+]
+}
+bullet: {
+type: FlakBulletType
+speed: 18
+lifetime: 20
+width: 18
+height: 26
+damage: 200
+splashDamage: 100
+splashDamageRadius: 32
+shrinkX: 0
+shrinkY: 0
+frontColor: 79eef2
+backColor: 74e1e8
+trailColor: 79eef2
+trailWidth: 6
+trailLength: 12
+trailChance: 0
+reflectable: false
+absorbable: true
+hittable: false
+pierce: true
+pierceCap: 16
+pierceBuilding: true
+collidesAir: true
+collidesGround: true
+}
+}
+]
+
+abilities: [
+{
+type: EnergyFieldAbility
+y: -5.25
+x: 29
+healPercent: 3
+damage: 240
+reload: 18
+range: 200
+rotateSpeed: 0.8
+status: fractal-madness
+statusDuration: 120
+maxTargets: 30
+sectors: 10
+color: 74c1e8
+targetAir: true
+targetGround: true
+hitBuildings: true
+hitUnits: true
+shootSound: spark
+}
+{
+type: EnergyFieldAbility
+y: -5.25
+x: -29
+healPercent: 3
+damage: 240
+reload: 18
+range: 200
+rotateSpeed: 0.8
+status: fractal-madness
+statusDuration: 120
+maxTargets: 30
+sectors: 10
+color: 74c1e8
+targetAir: true
+targetGround: true
+hitBuildings: true
+hitUnits: true
+shootSound: spark
+}
+]
+
+research: expanse

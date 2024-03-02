@@ -6,7 +6,7 @@ hitSize: 48
 mechFrontSway: 0.8
 mechSideSway: 0.5
 mechStepParticles: true
-stepShake: 8
+stepShake: 10
 outlineRadius: 4
 targetGround: true
 targetAir: true
@@ -78,9 +78,11 @@ layerOffset: 0.1
 y: -3.5
 x: 16.25
 shootY: 10
-recoil: 2
+recoil: 4
 reload: 75
 shake: 1
+rotate: true
+rotateSpeed: 0.9
 ejectEffect: casing1
 inaccuracy: 4
 shootSound: artillery

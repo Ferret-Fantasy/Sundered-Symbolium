@@ -36,19 +36,26 @@ shootY: 2.25
 reload: 9
 recoil: 0
 shootCone: 360
-shootSound: spark
+shootSound: sap
 bullet: {
-type: LightningBulletType
-damage: 10
-lightningColor: 3ebd95
-lightningLength: 6
-lightningLengthRand: 6
-pierce: true
-hitEffect: hitLancer
+type: SapBulletType
+speed: 0
+color: 3ebd95
+damage: 50
+sapStrength: 0.7
+length: 100
+width: 0.4
+shootEffect: shootSmall
 despawnEffect: none
+lifetime: 30
+pierce: true
+collides: false
 hittable: false
-reflectable: false
-keepVelocity: false
+hitSize: 0
+hitEffect: hitLiquid
+status: sapped
+statusDuration: 180
+impact: true
 }
 }
 ]

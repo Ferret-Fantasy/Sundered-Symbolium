@@ -11,15 +11,49 @@ outlineColor: 141414
 rotateSpeed: 3
 buildSpeed: 2.4
 mineSpeed: 1.4
-mineTier: 4
+mineTier: 6
 armor: 20
 hitSize: 40
 buildRange: 800
 mineRange: 800
+coreUnitDock: true
 targetAir: true
 targetGround: true
 drawEngine: false
 healColor: af6cd9
+
+weapons: [
+{
+name: melody-tuner
+mirror: true
+top: false
+layerOffset: -0.001
+y: 3
+x: 3
+reload: 6
+shootY: 6
+recoil: 3
+shootSound: plasmadrop
+bullet: {
+type: BasicBulletType
+damage: 120
+sprite: missile-large
+speed: 8
+width: 12
+height: 18
+lifetime: 60
+pierce: true
+pierceCap: 8
+shootEffect: shootSmall
+smokeEffect: shootSmallSmoke
+trailColor: af6cd9
+trailWidth: 4
+trailLength: 24
+frontColor: af6cd9
+backColor: 8a3dba
+}
+}
+]
 
 abilities: [
 {

@@ -1,19 +1,26 @@
 category: turret
 health: 500
-range: 800
+range: 200
 recoil: 0
-reload: 75
+reload: 25
+shootCone: 360
 size: 2
 targetGround: true
 targetAir: true
 outlineRadius: 4
-outlineColor: 303030
+outlineColor: 141414
+shootY: 0.5
 shootSound: laser
 requirements: [
 titanium/70
 silicon/50
 plastanium/70
 ]
+
+consumes: {
+power: 2.5
+}
+
 
 drawer: {
 type: DrawTurret
@@ -44,18 +51,48 @@ progress: warmup
 ]
 }
 
-ammoTypes: {
-copper: {
-type: BasicBulletType
-speed: 20
-lifetime: 40
-damage: 100
-width: 30
-height: 30
+shootType: {
+type: LaserBulletType
+lifetime: 20
+damage: 282
 pierce: true
 pierceBuilding: true
 collidesGround: true
 collidesAir: true
+length: 200
+drawSize: 200
+colors: [3ebd95, 30ffd9, ffffff]
+pierceCap: 2
+pierceBuilding: true
+buildingDamageMultiplier: 0.4
+width: 24
+hitEffect: hitLancer
+sideAngle: 165
+sideWidth: 1.2
+sideLength: 15
+lightningSpacing: 25
+lightningDelay: 0.8
+lightningDamage: 66
+lightningLength: 0
+lightningCone: 10
+lightningLengthRand: 0
+lightningAngleRand: 0
+lightningType: {
+type: LaserBulletType
+lifetime: 20
+damage: 282
+pierce: true
+pierceBuilding: true
+collidesGround: true
+collidesAir: true
+length: 50
+drawSize: 50
+colors: [3ebd95, 30ffd9, ffffff]
+pierceCap: 2
+pierceBuilding: true
+buildingDamageMultiplier: 0.4
+width: 12
+hitEffect: hitLancer
 }
 }
 

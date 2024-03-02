@@ -1,0 +1,67 @@
+type: legs
+health: 2400
+hitSize: 19
+armor: 15
+speed: 0.58
+drag: 0.1
+rotateSpeed: 2
+targetGround: true
+targetAir: true
+faceTarget: true
+outlineRadius: 4
+outlineColor: 0f0f0f
+hovering: true
+legContinuousMove: true
+alwaysShootWhenMoving: true
+lockLegBase: true
+legCount: 8
+legBaseOffset: 5
+legGroupSize: 2
+legMoveSpace: 1.5
+legForwardScl: 1.4
+legLength: 52
+legExtension: -8
+legMinLength: 0.5
+legMaxLength: 1.1
+legLengthScl: 0.9
+rippleScale: 0.24
+allowLegStep: true
+groundLayer: 78
+shadowElevation: 0.5
+
+weapons: [
+{
+name: okr-weapon
+top: false
+mirror: false
+y: 0
+x: 0
+shootY: 1.25
+reload: 9
+recoil: 0
+shootCone: 360
+shootSound: sap
+bullet: {
+type: SapBulletType
+speed: 0
+color: 3ebd95
+damage: 120
+sapStrength: 1.2
+length: 100
+width: 0.4
+shootEffect: shootSmall
+despawnEffect: none
+lifetime: 30
+pierce: true
+collides: false
+hittable: false
+hitSize: 0
+hitEffect: hitLiquid
+status: sapped
+statusDuration: 180
+impact: true
+}
+}
+]
+
+research: okr

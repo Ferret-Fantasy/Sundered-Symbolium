@@ -1,5 +1,5 @@
 color: ff5959
-healthMultiplier: 1.4
-speedMultiplier: 1.5
-damageMultiplier: 1.25
+healthMultiplier: 1.5
+speedMultiplier: 1.75
+damageMultiplier: 2
 permanent: true

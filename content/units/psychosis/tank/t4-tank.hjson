@@ -1,0 +1,118 @@
+type: tank
+template: TankUnitType
+hitSize: 28
+speed: 0.5
+rotateSpeed: 1.8
+armor: 24
+health: 12000
+itemCapacity: 0
+outlineRadius: 4
+outlineColor: 191a21
+
+//здесь нужно рассчитать анимацию гусениц.
+
+
+weapons: [
+{
+name: t4-tank-weapon
+recoils: 3
+parts: [
+{
+type: RegionPart
+suffix: -barrel-left
+under: true
+outline: true
+recoilIndex: 0
+progress: recoil
+moveY: -5
+}
+{
+type: RegionPart
+suffix: -barrel-center
+under: true
+outline: true
+recoilIndex: 1
+progress: recoil
+moveY: -5
+}
+{
+type: RegionPart
+suffix: -barrel-right
+under: true
+outline: true
+recoilIndex: 2
+progress: recoil
+moveY: -5
+}
+{
+type: RegionPart
+suffix: -ring
+under: true
+}
+{
+type: RegionPart
+suffix: -blade
+mirror: true
+moveRot: -22.5
+progress: warmup
+outline: true
+}
+{
+type: RegionPart
+suffix: -blade
+mirror: true
+moveRot: -45
+moveY: -2
+progress: warmup
+outline: true
+}
+]
+
+shoot: {
+type: ShootMulti
+source: {
+type: ShootBarrel
+barrels: [
+-4, 0, 0,
+0, 0, 0
+4, 0, 0
+]
+}
+dest: [
+{
+type: ShootSpread
+shots: 4
+spread: 2.5
+}
+]
+}
+x: 0
+y: 0
+top: true
+layerOffset: 0.001
+shootY: 6
+reload: 9
+rotate: true
+shootSound: bang
+shootCone: 12
+rotateSpeed: 3.2
+recoil: 0
+mirror: false
+bullet: {
+type: BasicBulletType
+damage: 25
+speed: 10
+width: 3
+height: 6
+trailLength: 10
+trailWidth: 3
+trailColor: 8ba9e8
+lifetime: 40
+hitSize: 3
+frontColor: ffffff
+backColor: 8ba9e8
+pierce: true
+pierceCap: 4
+}
+}
+]

@@ -1,0 +1,64 @@
+type: legs
+speed: 0.58
+drag: 0.1
+rotateSpeed: 2.7
+hitSize: 14
+armor: 6
+health: 800
+targetGround: true
+targetAir: true
+outlineColor: 141414
+outlineRadius: 4
+faceTarget: true
+
+hovering: true
+legContinuousMove: true
+legCount: 6
+legGroupSize: 3
+legBaseOffset: 3
+legMoveSpace: 1.5
+legForwardScl: 0.9
+legLength: 20
+legExtension: -3
+legMinLength: 0.5
+legMaxLength: 1.1
+rippleScale: 0.24
+allowLegStep: true
+groundLayer: 70
+
+weapons: [
+{
+name: kotar-weapon
+top: false
+mirror: false
+y: 0
+x: 0
+shootY: 1.25
+reload: 9
+recoil: 0
+shootCone: 360
+shootSound: sap
+bullet: {
+type: SapBulletType
+speed: 0
+color: 3ebd95
+damage: 50
+sapStrength: 0.7
+length: 100
+width: 0.4
+shootEffect: shootSmall
+despawnEffect: none
+lifetime: 30
+pierce: true
+collides: false
+hittable: false
+hitSize: 0
+hitEffect: hitLiquid
+status: sapped
+statusDuration: 180
+impact: true
+}
+}
+]
+
+research: glitch

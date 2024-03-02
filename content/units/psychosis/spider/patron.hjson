@@ -1,0 +1,127 @@
+type: "legs"
+name: "Покровитель"
+description: " "
+health: 9700
+armor: 15
+speed: 0.3
+rotateSpeed: 1
+range: 500
+drag: 0.1
+accel: 0.1
+targetGround: true
+targetAir: true
+faceTarget: true
+circleTarget: true
+drawCell: false
+outlineColor: "151518ff"
+
+lightRadius: 90
+lightColor: "FFFFFF"
+hitSize: 79
+
+
+hovering: true
+alwaysShootWhenMoving: true
+
+
+
+lockLegBase: true
+legContinuousMove: true
+legCount: 8
+legGroupSize: 2
+legBaseOffset: 14
+legMoveSpace: 1.3
+legForwardScl: 1
+legLength: 34
+legLengthScl: 1
+legExtension: -4
+legMinLength: 0.4
+legMaxLength: 1.2
+legStraightness: 0.5
+baseLegStraightness: 0.8
+legStraightLength: 1.0
+rippleScale: 0.24
+allowLegStep: true
+groundLayer: 62
+shadowElevation: 0.3
+
+
+
+immunities: [
+ "melting"
+ "blasted"
+ "burning" ]
+
+weapons: [
+{
+    name: patron-weapon
+    top: false
+    mirror: false
+    x: 0
+    y: 0
+    shootY: 23
+    reload: 480
+    shootSound: largeCannon
+    recoil: 5
+    shootCone: 180
+    bullet: {
+    type: ArtilleryBulletType
+    speed: 10
+    lifetime: 50
+    damage: 1000
+    splashDamage: 500
+    splashDamageRange: 48
+    shootEffect: none
+    width: 40
+    height: 40
+    frontColor: ffffff
+    backColor: ffb84d
+    collidesTiles: true
+    collidesGround: true
+    collidesAir: true
+    absorbable: true
+    reflectable: false
+    hittable: true
+}
+}
+    
+ { name: patron-gun
+   x: 11.25
+   y: 8
+   shootY: 11
+   top: true
+   mirror: true
+   rotate: false
+   reload: 15
+   inaccuracy: 3
+
+   layerOffset: -0.01
+   recoil: 3
+   shootSound: "blaster"
+   shoot: {
+    type: ShootSpread
+    shots: 3
+    spread: 7 }
+   bullet: {
+    type: LaserBulletType
+    damage: 250
+    length: 150
+    buildingDamageMultiplier: 0.7
+    lifetime: 15
+
+    drawSize: 200
+
+    colors: [
+    "FF8839FF"
+    "FFBD59FF"
+    "FFFFFFFF" ]
+
+    pierce: true
+    pierceBuilding: true
+    pierceCap: 5
+    smokeEffect: none
+    shootEffect: none
+    despawnEffect: none
+    hitEffect: none
+    }
+} ]

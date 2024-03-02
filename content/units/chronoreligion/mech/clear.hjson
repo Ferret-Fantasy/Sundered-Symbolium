@@ -1,0 +1,80 @@
+speed: 0.45
+rotateSpeed: 2.30
+buildSpeed: 1.4
+hitSize: 14
+health: 780
+armor: 7
+targetGround: true
+targetAir: true
+outlineColor: 565666
+outlineRadius: 4
+mechLegColor: 565666
+singleTarget: true
+immunities: [fractal-madness, shocked, burning]
+
+weapons: [
+{
+name: clear-weapon
+x: 0
+y: 0
+heatColor: 79eef2
+shootY: 4.5
+reload: 45
+cooldownTime: 42
+shoot: {
+type: ShootPattern
+shots: 6
+shotDelay: 0.3
+}
+inaccuracy: 12
+shootSound: spark
+bullet: {
+type: LightningBulletType
+damage: 10
+lightningColor: 79eef2
+lightningLength: 12
+lightningLengthRand: 12
+pierce: true
+hitEffect: hitLancer
+despawnEffect: none
+hittable: false
+reflectable: false
+keepVelocity: false
+}
+}
+{
+name: clear-gun
+mirror: true
+top: false
+y: 0
+x: 9.25
+shootY: 5
+reload: 24
+recoil: 1.5
+ejectEffect: casing1
+shoot: {
+type: ShootPattern
+shots: 3
+shotDelay: 2
+}
+shootSound: shoot
+bullet: {
+type: BasicBulletType
+damage: 20
+lifetime: 40
+speed: 4
+width: 6
+height: 8
+pierce: true
+pierceCap: 6
+status: fractal-madness
+statusDuration: 45
+shootEffect: shootSmall
+smokeEffect: shootSmallSmoke
+backColor: 74e1e8
+frontColor: 79eef2
+}
+}
+]
+
+research: adept

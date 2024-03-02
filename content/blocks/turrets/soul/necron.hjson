@@ -1,0 +1,257 @@
+type: ItemTurret
+category: turret
+health: 14000
+range: 370
+size: 4
+reload: 6
+inaccuracy: 30
+targetAir: true
+targetGround: true
+outlineColor: 141414
+outlineRadius: 4
+cooldownTime: 6
+shootWarmupSpeed: 0.06
+minWarmup: 0.96
+warmupMaintainTime: 30
+recoil: 0
+shootY: 12
+shootSound: bang
+requirements: [
+thorium/600
+silicon/600
+plastanium/400
+gordium/200
+]
+
+drawer: {
+type: DrawTurret
+parts: [
+{
+type: RegionPart
+suffix: -side
+mirror: true
+moveRot: -67.5
+progress: warmup
+heatProgress: warmup
+under: true
+}
+{
+type: RegionPart
+suffix: -side
+mirror: true
+under: true
+moveRot: -45
+progress: warmup
+heatProgress: warmup
+}
+{
+type: RegionPart
+suffix: -side
+mirror: true
+under: true
+moveRot: -22.5
+progress: warmup
+heatProgress: warmup
+}
+{
+type: ShapePart
+circle: true
+hollow: true
+stroke: 0
+strokeTo: 0.8
+radius: 5
+layer: 110
+color: 3ebd95
+progress: warmup
+y: 12
+}
+{
+type: HaloPart
+shapes: 1
+hollow: true
+tri: true
+triLength: 0
+triLengthTo: 5
+haloRadius: 0
+haloRotation: 0
+radius: 3
+stroke: 0
+strokeTo: 0.8
+layer: 110
+color: 3ebd95
+progress: warmup
+rotateSpeed: -6
+y: 12
+}
+{
+type: HaloPart
+shapes: 1
+hollow: true
+tri: true
+triLength: 0
+triLengthTo: 5
+haloRadius: 0
+haloRotation: -72
+radius: 3
+stroke: 0
+strokeTo: 0.8
+layer: 110
+color: 3ebd95
+progress: warmup
+rotateSpeed: -6
+y: 12
+}
+{
+type: HaloPart
+shapes: 1
+hollow: true
+tri: true
+triLength: 0
+triLengthTo: 5
+haloRadius: 0
+haloRotation: -144
+radius: 3
+stroke: 0
+strokeTo: 0.8
+layer: 110
+color: 3ebd95
+progress: warmup
+rotateSpeed: -6
+y: 12
+}
+{
+type: HaloPart
+shapes: 1
+hollow: true
+tri: true
+triLength: 0
+triLengthTo: 5
+haloRadius: 0
+haloRotation: -216
+radius: 3
+stroke: 0
+strokeTo: 0.8
+layer: 110
+color: 3ebd95
+progress: warmup
+rotateSpeed: -6
+y: 12
+}
+{
+type: HaloPart
+shapes: 1
+hollow: true
+tri: true
+triLength: 0
+triLengthTo: 5
+haloRadius: 0
+haloRotation: -288
+radius: 3
+stroke: 0
+strokeTo: 0.8
+layer: 110
+color: 3ebd95
+progress: warmup
+rotateSpeed: -6
+y: 12
+}
+]
+}
+
+ammoTypes: {
+thorium: {
+type: FlakBulletType
+speed: 10
+lifetime: 37
+width: 9
+height: 13
+damage: 40
+ammoMultiplier: 4
+splashDamage: 20
+splashDamageRadius: 32
+shrinkX: 0
+shrinkY: 0
+shootEffect: none
+despawnEffect: none
+smokeEffect: none
+hitEffect: none
+homingRange: 160
+homingPower: 0.12
+homingDelay: 0.12
+frontColor: ffffff
+backColor: 3ebd95
+trailColor: 3ebd95
+trailWidth: 4
+trailLength: 12
+trailChance: 0
+reflectable: false
+absorbable: true
+hittable: false
+pierce: true
+pierceCap: 2
+pierceBuilding: true
+collidesAir: true
+collidesGround: true
+fragSpread: 72
+fragRandomSpread: 0
+fragVelocityMin: 1
+fragVelocityMax: 1
+fragBullets: 5
+fragBullet: {
+type: PointBulletType
+speed: 20
+lifetime: 4
+damage: 0
+shootEffect: none
+despawnEffect: none
+smokeEffect: none
+trailEffect: none
+hitEffect: {
+type: WaveEffect
+sides: 0
+lifetime: 8
+colorFrom: 3ebd95
+colorTo: 3ebd95
+sizeFrom: 20
+sizeTo: 0
+strokeFrom: 3
+strokeTo: 0
+}
+pierce: true
+fragRandomSpread: 0
+fragSpread: 1.5
+fragAngle: 180
+fragVelocityMin: 1
+fragVelocityMax: 1
+fragBullets: 1
+fragBullet: {
+type: FlakBulletType
+speed: 10
+lifetime: 8
+width: 9
+height: 13
+damage: 40
+shootEffect: none
+despawnEffect: none
+smokeEffect: none
+hitEffect: none
+splashDamage: 20
+splashDamageRadius: 32
+shrinkX: 0
+shrinkY: 0
+frontColor: ffffff
+backColor: 3ebd95
+trailColor: 3ebd95
+trailWidth: 4
+trailLength: 12
+trailChance: 0
+reflectable: false
+absorbable: true
+hittable: false
+pierceBuilding: true
+collidesAir: true
+collidesGround: true
+}
+}
+}
+}

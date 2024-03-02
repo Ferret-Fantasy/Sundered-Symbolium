@@ -1,0 +1,57 @@
+speed: 0.5
+rotateSpeed: 2.45
+buildSpeed: 1.2
+hitSize: 10
+health: 450
+armor: 3
+targetGround: true
+targetAir: true
+outlineColor: 565666
+outlineRadius: 4
+mechLegColor: 565666
+singleTarget: true
+immunities: [fractal-madness, shocked]
+
+weapons: [
+{
+name: adept-weapon
+mirror: true
+top: false
+y: 0
+x: 6.5
+shootY: 3
+alternate: false
+shootSound: shoot
+reload: 12
+recoil: 0.75
+ejectEffect: casing1
+bullet: {
+type: BasicBulletType
+damage: 20
+speed: 6
+width: 6
+lifetime: 30
+height: 8
+status: fractal-madness
+statusDuration: 30
+shootEffect: shootSmall
+smokeEffect: shootSmallSmoke
+trailChance: 0.8
+trailLength: 6
+trailWidth: 0.75
+trailColor: 79eef2
+homingPower: 0.5
+homingRange: 250
+backColor: 74c1e8
+frontColor: 79eef2
+}
+}
+]
+
+research: {
+parent: ground-factory
+requirements: [
+silicon/700
+titanium/700
+]
+}

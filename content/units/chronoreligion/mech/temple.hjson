@@ -1,0 +1,150 @@
+speed: 0.39
+rotateSpeed: 2.10
+buildSpeed: 1.7
+hitSize: 15
+health: 2000
+armor: 12
+targetAir: false
+targetGround: true
+outlineRadius: 4
+outlineColor: 565666
+mechLegColor: 565666
+singleTarget: true
+faceTarget: true
+immunities: [fractal-madness, burning, shocked, disarmed]
+
+parts: [
+{
+type: RegionPart
+suffix: -mandible
+progress: warmup
+mirror: true
+moveRot: -20
+}
+]
+
+weapons: [
+{
+name: temple-weapon
+mirror: false
+x: 0
+y: 0
+shootY: 4
+reload: 12
+shootSound: flame
+bullet: {
+type: BulletType
+speed: 8
+damage: 48
+hitSize: 7
+lifetime: 7
+pierce: true
+pierceBuilding: true
+smokeEffect: {
+type: ParticleEffect
+interp: circleOut
+particles: 15
+sizeFrom: 3
+sizeTo: 0
+lifetime: 30
+length: 30
+cone: 6
+colorFrom: ffffff
+colorTo: ffffff
+}
+shootEffect: {
+type: ParticleEffect
+particles: 30
+sizeFrom: 4
+sizeTo: 0
+lifetime: 70
+length: 100
+interp: circleOut
+cone: 6
+colorFrom: 79eef2
+colorTo: 79eef2
+}
+hitEffect: {
+type: ParticleEffect
+particles: 18
+lifetime: 40
+length: 10
+sizeFrom: 3
+interp: circleOut
+sizeTo: 0.25
+cone: 360
+colorFrom: 79eef2
+colorTo: 79eef2
+}
+despawnEffect: none
+makeFire: true
+status: fractal-madness
+statusDuration: 150
+keepVelocity: false
+hittable: false
+reflectable: false
+incendAmount: 0.5
+incendChance: 0.2
+incendSpread: 0.2
+}
+}
+{
+name: temple-cannon
+mirror: true
+top: false
+y: 0.75
+x: 12.5
+layerOffset: -0.001
+shootY: 5.5
+reload: 18
+recoil: 1
+shootSound: shoot
+shoot: {
+type: ShootPattern
+shotDelay: 6
+}
+bullet: {
+type: FlakBulletType
+damage: 40
+splashDamage: 24
+splashDamageRadius: 16
+explodeRange: 16
+explodeDelay: 2
+lifetime: 40
+width: 12
+height: 15
+speed: 4
+backColor: 74e1e8
+frontColor: 79eef2
+collidesGround: true
+collidesAir: true
+hitEffect: flakExplosionBig
+collidesGround: false
+pierce: true
+pierceCap: 4
+hittable: true
+reflectable: true
+absorbable: true
+fragBullets: 8
+fragSpread: 45
+fragRandomSpread: 0
+fragBullet: {
+type: BasicBulletType
+speed: 4
+damage: 12
+width: 9
+height: 12
+lifetime: 40
+pierceCap: 2
+reflectable: false
+hittable: true
+backColor: 74e1e8
+frontColor: 79eef2
+collidesGround: true
+collidesAir: true
+}
+}
+}
+]
+
+research: clear
